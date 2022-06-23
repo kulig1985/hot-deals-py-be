@@ -50,7 +50,7 @@ class HotDealsHungaryApi:
             if platform.platform()[:platform.platform().index('-')].lower() == 'macos':
                 config_path = '/Users/kuligabor/Documents/HotDealsHungary/hot-deals-py-be/mongo.cfg'
             else:
-                config_path = '/data/flight/flight_search_py_be/kiwi.cfg'
+                config_path = '/data/hot-deals-py-be/mongo.cfg'
             config.read(config_path, encoding='utf-8')
 
             self.log.info("Config file load end")
