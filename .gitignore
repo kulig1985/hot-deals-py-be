@@ -1,0 +1,4 @@
+
+*.cfg
+*.xlsx
+.ipynb_checkpoints
