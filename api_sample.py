@@ -8,6 +8,7 @@ import json
 import platform
 import unidecode
 from bson.json_util import dumps
+import re
 
 class HotDealsHungaryApi:
 
@@ -40,7 +41,6 @@ class HotDealsHungaryApi:
         collection = db[collection]
 
         return collection
-
 
     def load_config(self):
         try:
@@ -84,15 +84,32 @@ class HotDealsHungaryApi:
             print("logger error: " + str(e))
             sys.exit(1)
 
+
     def index(self):
         return 'HotDealsHungaryApi'
 
     def get_offer(self, item_name):
-        return Response(dumps(self.collection.find({'itemCleanName': {'$regex': unidecode.unidecode(item_name)}})), mimetype='application/json')
+
+        item_name = unidecode.unidecode(item_name)
+        #item_name = '(?i)' + item_name + '\W |$'
+        print(f'item_name: {item_name}')
+        #compiled_re = re.compile(r'\b' + item_name)
+        #print(f'compiled_re: {compiled_re}')
+        return Response(dumps(self.collection.find({'itemCleanName': {'$regex' : r'\b' + item_name + r'\b'}})), mimetype='application/json')
+'''
+{ '_id': 1,
+'itemName': 1,
+'price': 1,
+#'salesStart' : 1,
+'source' : 1,
+'shopName' : 1,
+'_id': 0 }
+'''
 
 def main():
     server = HotDealsHungaryApi(__name__)
     server.run(host='0.0.0.0', port=9988)
+
 
 if __name__ == '__main__':
     main()
