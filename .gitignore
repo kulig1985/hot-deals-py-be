@@ -2,3 +2,11 @@
 *.xlsx
 .ipynb_checkpoints
 .idea
+.DS_Store
+orient
+records
+index
+hun_words.txt
+columns
+*.log
+hot_deals_api.log

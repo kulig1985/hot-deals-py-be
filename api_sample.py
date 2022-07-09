@@ -3,12 +3,13 @@ from flask import Flask
 import logging
 from configparser import ConfigParser
 import sys
-from flask import Response
+from flask import Response, request
 import json
 import platform
 import unidecode
 from bson.json_util import dumps
 import re
+from bson.objectid import ObjectId
 
 class HotDealsHungaryApi:
 
@@ -21,15 +22,50 @@ class HotDealsHungaryApi:
         self.user_name = self.config.get('DB', 'user_name')
         self.password = self.config.get('DB', 'password')
         self.mongo_url = f'mongodb://{self.user_name}:{self.password}@95.138.193.102:27017/?authMechanism=DEFAULT'
-        self.collection = self.connect_mongo(self.mongo_url, 'offer', 'offer-collection')
+        self.offer_collection = self.connect_mongo(self.mongo_url, 'offer', 'offer-collection')
+        self.offer_listener_collection = self.connect_mongo(self.mongo_url, 'offer', 'offer-listener')
+        self.shopping_list_collection = self.connect_mongo(self.mongo_url, 'offer', 'shopping-list')
+        self.operation_dict = {'boolId': '$set',
+                               'checkFlag': '$set',
+                               'modDate': '$set',
+                               'volume': '$inc',
+                               'alloweUidList': '$push'}
 
-        @self.app.route('/')
+        @self.app.route('/', methods=['GET'])
         def __index():
             return self.index()
 
         @self.app.route('/get_offer/<item_name>', methods=['GET'])
         def __get_offer(item_name):
             return self.get_offer(item_name)
+
+        @self.app.route('/get_offer_listener_by_user/<uid>', methods=['GET'])
+        def __get_offer_listener_by_user(uid):
+            return self.get_offer_listener_by_user(uid)
+
+        @self.app.route('/create_offer_listener', methods=['POST'])
+        def __create_offer_listener():
+            return self.create_offer_listener()
+
+        @self.app.route('/create_shopping_list', methods=['POST'])
+        def __create_shopping_list():
+            return self.create_shopping_list()
+
+        @self.app.route('/add_item_to_shopping_list', methods=['POST'])
+        def __add_item_to_shopping_list():
+            return self.add_item_to_shopping_list()
+
+        @self.app.route('/modify_shopping_list_item', methods=['PATCH'])
+        def __modify_shopping_list_item():
+            return self.modify_shopping_list_item()
+
+        @self.app.route('/modify_shopping_list', methods=['PATCH'])
+        def __modify_shopping_list():
+            return self.modify_shopping_list()
+
+        @self.app.route('/modify_offer_listener', methods=['PATCH'])
+        def __modify_offer_listener():
+            return self.modify_offer_listener()
 
     def run(self, host, port):
         self.app.run(host=host, port=port)
@@ -85,26 +121,146 @@ class HotDealsHungaryApi:
             sys.exit(1)
 
 
+    def create_query_param(self, data, fill_value):
+
+        self.log.debug('create_query_param invoked!')
+
+        query_param_dict = {}
+
+        for key in data:
+            if not (key == 'id') | \
+                   (key == 'offerCollectionId') |\
+                   (key == 'removeUser') |\
+                   (key == 'itemName') |\
+                   (key == 'crDate'):
+                #self.log.debug(key)
+                if self.operation_dict[key] in query_param_dict.keys():
+                    query_param_dict[self.operation_dict[key]].update({fill_value + key: data[key]})
+                else:
+                    query_param_dict[self.operation_dict[key]] = {fill_value + key: data[key]}
+
+        self.log.debug(query_param_dict)
+
+        return query_param_dict
+
     def index(self):
         return 'HotDealsHungaryApi'
 
     def get_offer(self, item_name):
 
-        item_name = unidecode.unidecode(item_name)
-        #item_name = '(?i)' + item_name + '\W |$'
-        print(f'item_name: {item_name}')
-        #compiled_re = re.compile(r'\b' + item_name)
-        #print(f'compiled_re: {compiled_re}')
-        return Response(dumps(self.collection.find({'itemCleanName': {'$regex' : r'\b' + item_name + r'\b'}})), mimetype='application/json')
-'''
-{ '_id': 1,
-'itemName': 1,
-'price': 1,
-#'salesStart' : 1,
-'source' : 1,
-'shopName' : 1,
-'_id': 0 }
-'''
+        try:
+            item_name = unidecode.unidecode(item_name).lower()
+            self.log.debug(f'get_offer invoked with item_name: {item_name}')
+
+            max_key = self.offer_collection.find().sort([("timeKey", -1)]).limit(1).next()['timeKey']
+            self.log.debug(f'max_key: {max_key}')
+
+            return Response(dumps(self.offer_collection.find({'$and': [
+                                                {'itemCleanName': {'$regex' : r'\b' + item_name + r'\b'}},
+                                                {'timeKey': {'$eq': max_key}}
+                                                ]})), 200, mimetype='application/json')
+        except Exception as e:
+            return Response(e, 500, mimetype='application/json')
+
+    def get_offer_listener_by_user(self, uid):
+        try:
+            self.log.debug(f'get_offer_listener_by_user invoked with uid: {uid}')
+            return Response(dumps(self.offer_listener_collection.find({'uid': uid})), 200, mimetype='application/json')
+
+        except Exception as e:
+            return Response(e, 500, mimetype='application/json')
+
+    def create_offer_listener(self):
+        try:
+            data = request.get_json()
+            self.log.debug(data)
+            mongo_result = self.offer_listener_collection.insert_one(data)
+            return Response(dumps({'id': str(mongo_result.inserted_id)}), 201, mimetype='application/json')
+        except Exception as e:
+            return Response(e, 500, mimetype='application/json')
+
+
+    def create_shopping_list(self):
+        try:
+            data = request.get_json()
+            self.log.debug(data)
+            mongo_result = self.shopping_list_collection.insert_one(data)
+            return Response(dumps({'id' : str(mongo_result.inserted_id)}), 201, mimetype='application/json')
+        except Exception as e:
+            return Response(e,500, mimetype='application/json')
+
+
+    def add_item_to_shopping_list(self):
+        try:
+            data = request.get_json()
+            self.log.debug(data)
+            mongo_result = self.shopping_list_collection.update_one({"_id": ObjectId(data['id'])},
+                                                                    {'$push': {'itemList': data['newItem']}}, upsert=True)
+
+            return Response(dumps({'id': str(mongo_result.upserted_id)}), 201, mimetype='application/json')
+
+        except Exception as e:
+            return Response(e, 500, mimetype='application/json')
+
+    def modify_shopping_list_item(self):
+        try:
+            data = request.get_json()
+            self.log.debug(data)
+
+            fill_value = 'itemList.$.'
+            query_param_dict = self.create_query_param(data, fill_value)
+
+            mongo_result = self.shopping_list_collection.update_one(
+                {'itemList.itemDetail.offerCollectionId': data['offerCollectionId']}, query_param_dict)
+
+            return Response(dumps({'matchedCount': str(mongo_result.matched_count)}), 201, mimetype='application/json')
+
+        except Exception as e:
+            return Response(e, 500, mimetype='application/json')
+
+    def modify_shopping_list(self):
+        try:
+            data = request.get_json()
+            self.log.debug(data)
+
+            fill_value = ''
+            query_param_dict = self.create_query_param(data, fill_value)
+
+            if data['removeUser'] == 'Y':
+                query_param_dict['$pull'] = query_param_dict['$push']
+                del query_param_dict['$push']
+                self.log.debug('removeUser YES')
+                self.log.debug(query_param_dict)
+
+            mongo_result = self.shopping_list_collection.update_one(
+                {'_id': ObjectId(data['id'])},
+                query_param_dict)
+
+            return Response(dumps({'matchedCount': mongo_result.matched_count}), 201, mimetype='application/json')
+
+        except Exception as e:
+            return Response(e, 500, mimetype='application/json')
+
+
+    def modify_offer_listener(self):
+
+        #try:
+        data = request.get_json()
+        self.log.debug(data)
+
+        fill_value = ''
+        query_param_dict = self.create_query_param(data, fill_value)
+
+        mongo_result = self.offer_listener_collection.update_one(
+            {'_id': ObjectId(data['id'])}, query_param_dict)
+
+        return Response(dumps({'matchedCount': str(mongo_result.matched_count)}), 201, mimetype='application/json')
+
+        #except Exception as e:
+        #    return Response(e, 500, mimetype='application/json')
+
+
+
 
 def main():
     server = HotDealsHungaryApi(__name__)

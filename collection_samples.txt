@@ -1,0 +1,31 @@
+Collections
+
+---------OFFER_LISTENER_COLLECTION---------
+
+{
+"uid": "prQUKkIxljVqbHlCKah7T1Rh7l22",
+"itemName": "tej",
+"crDate": "2022.07.08"
+"boolId": 1
+"removeDate": "2022.07.08"
+}
+
+
+---SHOPPING-LIST-ITEM-----
+
+{
+  "_id": {
+    "$oid": "62c55fe3e096510c589ef814"
+  },
+  "itemId": "13590",
+  "itemName": "HÚSMESTER Friss grillcsirke, /kg ",
+  "itemCleanName": "husmester friss grillcsirke, /kg ",
+  "imageUrl": "https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03",
+  "price": 849,
+  "measure": "kg",
+  "salesStart": "N.a",
+  "source": "szuper-ajanlatok-mindennap",
+  "runDate": "2022.07.06-10:52:32",
+  "shopName": "aldi",
+  "timeKey": "2022_07_11_02"
+}

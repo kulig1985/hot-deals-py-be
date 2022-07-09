@@ -124,3 +124,764 @@
 2022-06-28 20:36:47 - INFO - Logger set
 2022-06-28 20:36:47 - INFO - Config file load begin
 2022-06-28 20:36:47 - INFO - Config file load end
+2022-07-08 16:07:33 - INFO - Logger set
+2022-07-08 16:07:33 - INFO - Config file load begin
+2022-07-08 16:07:33 - INFO - Config file load end
+2022-07-08 16:08:46 - DEBUG - {'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'itemName': 'tej', 'crDate': '2022.07.08', 'boolId': 1, 'removeDate': '2022.07.08'}
+2022-07-08 16:09:20 - INFO - Logger set
+2022-07-08 16:09:20 - INFO - Config file load begin
+2022-07-08 16:09:21 - INFO - Config file load end
+2022-07-08 16:09:24 - DEBUG - {'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'itemName': 'tej', 'crDate': '2022.07.08', 'boolId': 1, 'removeDate': '2022.07.08'}
+2022-07-08 16:14:23 - INFO - Logger set
+2022-07-08 16:14:23 - INFO - Config file load begin
+2022-07-08 16:14:23 - INFO - Config file load end
+2022-07-08 16:14:26 - DEBUG - {'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'itemName': 'tej', 'crDate': '2022.07.08', 'boolId': 1, 'removeDate': '2022.07.08'}
+2022-07-08 16:57:03 - INFO - Logger set
+2022-07-08 16:57:03 - INFO - Config file load begin
+2022-07-08 16:57:03 - INFO - Config file load end
+2022-07-08 16:58:45 - DEBUG - {'alloweUidList': ['prQUKkIxljVqbHlCKah7T1Rh7l22'], 'listItems': [{'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}, {'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}], 'crDate': '2022.07.08', 'modDate': '2022.07.08', 'boolId': 1}
+2022-07-08 17:00:29 - INFO - Logger set
+2022-07-08 17:00:29 - INFO - Config file load begin
+2022-07-08 17:00:29 - INFO - Config file load end
+2022-07-08 17:00:33 - DEBUG - {'alloweUidList': ['prQUKkIxljVqbHlCKah7T1Rh7l22'], 'listItems': [{'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}, {'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}], 'crDate': '2022.07.08', 'modDate': '2022.07.08', 'boolId': 1}
+2022-07-08 17:02:22 - INFO - Logger set
+2022-07-08 17:02:22 - INFO - Config file load begin
+2022-07-08 17:02:22 - INFO - Config file load end
+2022-07-08 17:02:27 - DEBUG - {'alloweUidList': ['prQUKkIxljVqbHlCKah7T1Rh7l22'], 'listItems': [{'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}, {'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}], 'crDate': '2022.07.08', 'modDate': '2022.07.08', 'boolId': 1}
+2022-07-08 17:03:55 - INFO - Logger set
+2022-07-08 17:03:55 - INFO - Config file load begin
+2022-07-08 17:03:55 - INFO - Config file load end
+2022-07-08 17:03:59 - DEBUG - {'alloweUidList': ['prQUKkIxljVqbHlCKah7T1Rh7l22'], 'listItems': [{'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}, {'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}], 'crDate': '2022.07.08', 'modDate': '2022.07.08', 'boolId': 1}
+2022-07-08 17:04:59 - INFO - Logger set
+2022-07-08 17:04:59 - INFO - Config file load begin
+2022-07-08 17:04:59 - INFO - Config file load end
+2022-07-08 17:05:02 - DEBUG - {'alloweUidList': ['prQUKkIxljVqbHlCKah7T1Rh7l22'], 'listItems': [{'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}, {'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}], 'crDate': '2022.07.08', 'modDate': '2022.07.08', 'boolId': 1}
+2022-07-08 17:05:52 - INFO - Logger set
+2022-07-08 17:05:52 - INFO - Config file load begin
+2022-07-08 17:05:52 - INFO - Config file load end
+2022-07-08 17:06:00 - DEBUG - {'alloweUidList': ['prQUKkIxljVqbHlCKah7T1Rh7l22'], 'listItems': [{'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}, {'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}], 'crDate': '2022.07.08', 'modDate': '2022.07.08', 'boolId': 1}
+2022-07-08 17:06:28 - INFO - Logger set
+2022-07-08 17:06:28 - INFO - Config file load begin
+2022-07-08 17:06:28 - INFO - Config file load end
+2022-07-08 17:06:33 - DEBUG - {'alloweUidList': ['prQUKkIxljVqbHlCKah7T1Rh7l22'], 'listItems': [{'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}, {'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}], 'crDate': '2022.07.08', 'modDate': '2022.07.08', 'boolId': 1}
+2022-07-08 17:07:27 - INFO - Logger set
+2022-07-08 17:07:27 - INFO - Config file load begin
+2022-07-08 17:07:27 - INFO - Config file load end
+2022-07-08 17:07:31 - DEBUG - {'alloweUidList': ['prQUKkIxljVqbHlCKah7T1Rh7l22'], 'listItems': [{'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}, {'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}], 'crDate': '2022.07.08', 'modDate': '2022.07.08', 'boolId': 1}
+2022-07-08 17:16:36 - INFO - Logger set
+2022-07-08 17:16:36 - INFO - Config file load begin
+2022-07-08 17:16:36 - INFO - Config file load end
+2022-07-08 17:17:21 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'newItem': {'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}}
+2022-07-08 17:18:23 - INFO - Logger set
+2022-07-08 17:18:23 - INFO - Config file load begin
+2022-07-08 17:18:23 - INFO - Config file load end
+2022-07-08 17:18:34 - INFO - Logger set
+2022-07-08 17:18:34 - INFO - Config file load begin
+2022-07-08 17:18:34 - INFO - Config file load end
+2022-07-08 17:18:37 - DEBUG - 62c84833dc7127012023d3eb
+2022-07-08 17:18:37 - DEBUG - {'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}
+2022-07-08 19:59:01 - INFO - Logger set
+2022-07-08 19:59:01 - INFO - Config file load begin
+2022-07-08 19:59:01 - INFO - Config file load end
+2022-07-08 19:59:04 - DEBUG - 62c84833dc7127012023d3eb
+2022-07-08 19:59:04 - DEBUG - {'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}
+2022-07-08 19:59:19 - INFO - Logger set
+2022-07-08 19:59:19 - INFO - Config file load begin
+2022-07-08 19:59:19 - INFO - Config file load end
+2022-07-08 19:59:21 - DEBUG - 62c84833dc7127012023d3eb
+2022-07-08 19:59:21 - DEBUG - {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}
+2022-07-08 19:59:40 - INFO - Logger set
+2022-07-08 19:59:40 - INFO - Config file load begin
+2022-07-08 19:59:40 - INFO - Config file load end
+2022-07-08 20:00:26 - INFO - Logger set
+2022-07-08 20:00:26 - INFO - Config file load begin
+2022-07-08 20:00:26 - INFO - Config file load end
+2022-07-08 20:00:31 - DEBUG - 62c84833dc7127012023d3eb
+2022-07-08 20:00:31 - DEBUG - {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}
+2022-07-08 20:02:59 - INFO - Logger set
+2022-07-08 20:02:59 - INFO - Config file load begin
+2022-07-08 20:02:59 - INFO - Config file load end
+2022-07-08 20:03:03 - DEBUG - 62c84833dc7127012023d3eb
+2022-07-08 20:03:03 - DEBUG - {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}
+2022-07-08 20:03:48 - INFO - Logger set
+2022-07-08 20:03:48 - INFO - Config file load begin
+2022-07-08 20:03:48 - INFO - Config file load end
+2022-07-08 20:03:54 - DEBUG - 62c84833dc7127012023d3eb
+2022-07-08 20:03:54 - DEBUG - {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}
+2022-07-08 20:05:27 - INFO - Logger set
+2022-07-08 20:05:27 - INFO - Config file load begin
+2022-07-08 20:05:27 - INFO - Config file load end
+2022-07-08 20:05:34 - DEBUG - 62c84833dc7127012023d3eb
+2022-07-08 20:05:34 - DEBUG - {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}
+2022-07-08 20:06:21 - INFO - Logger set
+2022-07-08 20:06:21 - INFO - Config file load begin
+2022-07-08 20:06:21 - INFO - Config file load end
+2022-07-08 20:06:25 - DEBUG - 62c84833dc7127012023d3eb
+2022-07-08 20:06:25 - DEBUG - {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}
+2022-07-08 20:07:37 - INFO - Logger set
+2022-07-08 20:07:37 - INFO - Config file load begin
+2022-07-08 20:07:37 - INFO - Config file load end
+2022-07-08 20:07:42 - DEBUG - 62c84833dc7127012023d3eb
+2022-07-08 20:07:42 - DEBUG - {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}
+2022-07-08 20:08:28 - DEBUG - 62c84833dc7127012023d3eb
+2022-07-08 20:08:28 - DEBUG - {'offerCollectionId': 'valami', 'itemId': '13590', 'itemName': 'semmi', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}
+2022-07-08 20:10:16 - INFO - Logger set
+2022-07-08 20:10:16 - INFO - Config file load begin
+2022-07-08 20:10:16 - INFO - Config file load end
+2022-07-08 20:10:20 - DEBUG - 62c84833dc7127012023d3eb
+2022-07-08 20:10:20 - DEBUG - {'item': {'offerCollectionId': 'valami', 'itemId': '13590', 'itemName': 'semmi', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}
+2022-07-08 20:12:45 - INFO - Logger set
+2022-07-08 20:12:45 - INFO - Config file load begin
+2022-07-08 20:12:45 - INFO - Config file load end
+2022-07-08 20:12:49 - DEBUG - 62c84833dc7127012023d3eb
+2022-07-08 20:12:49 - DEBUG - {'item': {'offerCollectionId': 'valami', 'itemId': '13590', 'itemName': 'semmi', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}
+2022-07-08 20:14:45 - INFO - Logger set
+2022-07-08 20:14:45 - INFO - Config file load begin
+2022-07-08 20:14:45 - INFO - Config file load end
+2022-07-08 20:14:50 - DEBUG - 62c84833dc7127012023d3eb
+2022-07-08 20:14:50 - DEBUG - {'item': {'offerCollectionId': 'valami', 'itemId': '13590', 'itemName': 'semmi', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}
+2022-07-08 20:17:12 - DEBUG - 62c84833dc7127012023d3eb
+2022-07-08 20:17:12 - DEBUG - {'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'semmi', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}
+2022-07-08 20:18:36 - INFO - Logger set
+2022-07-08 20:18:36 - INFO - Config file load begin
+2022-07-08 20:18:36 - INFO - Config file load end
+2022-07-08 20:18:43 - DEBUG - 62c84833dc7127012023d3eb
+2022-07-08 20:18:43 - DEBUG - {'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'semmi', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}
+2022-07-08 20:43:10 - INFO - Logger set
+2022-07-08 20:43:10 - INFO - Config file load begin
+2022-07-08 20:43:10 - INFO - Config file load end
+2022-07-08 20:43:53 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'offerCollectionId': '62c55fe3e096510c589ef815', 'volume': 1}
+2022-07-08 20:44:19 - INFO - Logger set
+2022-07-08 20:44:19 - INFO - Config file load begin
+2022-07-08 20:44:19 - INFO - Config file load end
+2022-07-08 20:44:25 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'offerCollectionId': '62c55fe3e096510c589ef815', 'volume': 1}
+2022-07-08 20:45:27 - INFO - Logger set
+2022-07-08 20:45:27 - INFO - Config file load begin
+2022-07-08 20:45:27 - INFO - Config file load end
+2022-07-08 20:45:29 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'offerCollectionId': '62c55fe3e096510c589ef815', 'volume': 1}
+2022-07-08 20:45:46 - INFO - Logger set
+2022-07-08 20:45:46 - INFO - Config file load begin
+2022-07-08 20:45:47 - INFO - Config file load end
+2022-07-08 20:45:51 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'offerCollectionId': '62c55fe3e096510c589ef815', 'volume': 1}
+2022-07-08 20:46:13 - INFO - Logger set
+2022-07-08 20:46:13 - INFO - Config file load begin
+2022-07-08 20:46:13 - INFO - Config file load end
+2022-07-08 20:46:17 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'offerCollectionId': '62c55fe3e096510c589ef815', 'volume': 1}
+2022-07-08 20:47:12 - INFO - Logger set
+2022-07-08 20:47:12 - INFO - Config file load begin
+2022-07-08 20:47:12 - INFO - Config file load end
+2022-07-08 20:47:14 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'offerCollectionId': '62c55fe3e096510c589ef815', 'volume': 1}
+2022-07-08 20:48:44 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 1}
+2022-07-08 20:49:47 - INFO - Logger set
+2022-07-08 20:49:47 - INFO - Config file load begin
+2022-07-08 20:49:47 - INFO - Config file load end
+2022-07-08 20:49:50 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 1}
+2022-07-08 20:50:54 - DEBUG - {'alloweUidList': ['prQUKkIxljVqbHlCKah7T1Rh7l22'], 'listItems': [{'item': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}, {'item': {'offerCollectionId': '62c55fe3e096510c589ef815', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}], 'crDate': '2022.07.08', 'modDate': '2022.07.08', 'boolId': 1}
+2022-07-08 20:51:11 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 1}
+2022-07-08 20:51:41 - INFO - Logger set
+2022-07-08 20:51:41 - INFO - Config file load begin
+2022-07-08 20:51:41 - INFO - Config file load end
+2022-07-08 20:51:45 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 1}
+2022-07-08 20:52:34 - INFO - Logger set
+2022-07-08 20:52:34 - INFO - Config file load begin
+2022-07-08 20:52:34 - INFO - Config file load end
+2022-07-08 20:52:40 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 1}
+2022-07-08 20:54:10 - INFO - Logger set
+2022-07-08 20:54:10 - INFO - Config file load begin
+2022-07-08 20:54:10 - INFO - Config file load end
+2022-07-08 20:54:18 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 1}
+2022-07-08 20:54:49 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 20:56:38 - INFO - Logger set
+2022-07-08 20:56:38 - INFO - Config file load begin
+2022-07-08 20:56:38 - INFO - Config file load end
+2022-07-08 20:56:40 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 20:58:46 - INFO - Logger set
+2022-07-08 20:58:46 - INFO - Config file load begin
+2022-07-08 20:58:46 - INFO - Config file load end
+2022-07-08 20:58:50 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 20:59:50 - INFO - Logger set
+2022-07-08 20:59:50 - INFO - Config file load begin
+2022-07-08 20:59:50 - INFO - Config file load end
+2022-07-08 20:59:53 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:04:28 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:05:35 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:05:55 - INFO - Logger set
+2022-07-08 21:05:55 - INFO - Config file load begin
+2022-07-08 21:05:55 - INFO - Config file load end
+2022-07-08 21:05:59 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:21:48 - INFO - Logger set
+2022-07-08 21:21:48 - INFO - Config file load begin
+2022-07-08 21:21:48 - INFO - Config file load end
+2022-07-08 21:21:51 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:24:53 - INFO - Logger set
+2022-07-08 21:24:53 - INFO - Config file load begin
+2022-07-08 21:24:53 - INFO - Config file load end
+2022-07-08 21:24:57 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:25:29 - INFO - Logger set
+2022-07-08 21:25:29 - INFO - Config file load begin
+2022-07-08 21:25:29 - INFO - Config file load end
+2022-07-08 21:25:32 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:30:27 - INFO - Logger set
+2022-07-08 21:30:27 - INFO - Config file load begin
+2022-07-08 21:30:27 - INFO - Config file load end
+2022-07-08 21:30:32 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:34:43 - INFO - Logger set
+2022-07-08 21:34:43 - INFO - Config file load begin
+2022-07-08 21:34:43 - INFO - Config file load end
+2022-07-08 21:34:46 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:41:51 - INFO - Logger set
+2022-07-08 21:41:51 - INFO - Config file load begin
+2022-07-08 21:41:51 - INFO - Config file load end
+2022-07-08 21:41:53 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:42:15 - INFO - Logger set
+2022-07-08 21:42:15 - INFO - Config file load begin
+2022-07-08 21:42:15 - INFO - Config file load end
+2022-07-08 21:42:17 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:42:42 - INFO - Logger set
+2022-07-08 21:42:42 - INFO - Config file load begin
+2022-07-08 21:42:42 - INFO - Config file load end
+2022-07-08 21:42:50 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:42:52 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:42:52 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:44:11 - INFO - Logger set
+2022-07-08 21:44:11 - INFO - Config file load begin
+2022-07-08 21:44:11 - INFO - Config file load end
+2022-07-08 21:44:13 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:45:08 - INFO - Logger set
+2022-07-08 21:45:08 - INFO - Config file load begin
+2022-07-08 21:45:08 - INFO - Config file load end
+2022-07-08 21:45:10 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:45:26 - INFO - Logger set
+2022-07-08 21:45:26 - INFO - Config file load begin
+2022-07-08 21:45:26 - INFO - Config file load end
+2022-07-08 21:45:30 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:50:35 - INFO - Logger set
+2022-07-08 21:50:35 - INFO - Config file load begin
+2022-07-08 21:50:35 - INFO - Config file load end
+2022-07-08 21:50:38 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:50:59 - INFO - Logger set
+2022-07-08 21:50:59 - INFO - Config file load begin
+2022-07-08 21:50:59 - INFO - Config file load end
+2022-07-08 21:51:02 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:51:37 - INFO - Logger set
+2022-07-08 21:51:37 - INFO - Config file load begin
+2022-07-08 21:51:37 - INFO - Config file load end
+2022-07-08 21:51:38 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:52:29 - INFO - Logger set
+2022-07-08 21:52:29 - INFO - Config file load begin
+2022-07-08 21:52:29 - INFO - Config file load end
+2022-07-08 21:52:31 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:55:30 - INFO - Logger set
+2022-07-08 21:55:30 - INFO - Config file load begin
+2022-07-08 21:55:30 - INFO - Config file load end
+2022-07-08 21:55:32 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:56:16 - INFO - Logger set
+2022-07-08 21:56:16 - INFO - Config file load begin
+2022-07-08 21:56:16 - INFO - Config file load end
+2022-07-08 21:56:24 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:57:27 - INFO - Logger set
+2022-07-08 21:57:27 - INFO - Config file load begin
+2022-07-08 21:57:27 - INFO - Config file load end
+2022-07-08 21:57:29 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:58:37 - INFO - Logger set
+2022-07-08 21:58:37 - INFO - Config file load begin
+2022-07-08 21:58:37 - INFO - Config file load end
+2022-07-08 21:58:46 - INFO - Logger set
+2022-07-08 21:58:46 - INFO - Config file load begin
+2022-07-08 21:58:46 - INFO - Config file load end
+2022-07-08 21:58:48 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 21:59:38 - INFO - Logger set
+2022-07-08 21:59:38 - INFO - Config file load begin
+2022-07-08 21:59:38 - INFO - Config file load end
+2022-07-08 21:59:42 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 22:00:23 - INFO - Logger set
+2022-07-08 22:00:23 - INFO - Config file load begin
+2022-07-08 22:00:23 - INFO - Config file load end
+2022-07-08 22:00:26 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 22:00:47 - INFO - Logger set
+2022-07-08 22:00:47 - INFO - Config file load begin
+2022-07-08 22:00:47 - INFO - Config file load end
+2022-07-08 22:00:49 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 22:01:17 - INFO - Logger set
+2022-07-08 22:01:17 - INFO - Config file load begin
+2022-07-08 22:01:17 - INFO - Config file load end
+2022-07-08 22:01:21 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 22:02:40 - INFO - Logger set
+2022-07-08 22:02:40 - INFO - Config file load begin
+2022-07-08 22:02:40 - INFO - Config file load end
+2022-07-08 22:02:49 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 22:03:06 - INFO - Logger set
+2022-07-08 22:03:06 - INFO - Config file load begin
+2022-07-08 22:03:06 - INFO - Config file load end
+2022-07-08 22:03:11 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 22:03:57 - INFO - Logger set
+2022-07-08 22:03:57 - INFO - Config file load begin
+2022-07-08 22:03:58 - INFO - Config file load end
+2022-07-08 22:04:01 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 22:05:03 - INFO - Logger set
+2022-07-08 22:05:03 - INFO - Config file load begin
+2022-07-08 22:05:03 - INFO - Config file load end
+2022-07-08 22:05:04 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 22:05:23 - INFO - Logger set
+2022-07-08 22:05:23 - INFO - Config file load begin
+2022-07-08 22:05:23 - INFO - Config file load end
+2022-07-08 22:05:26 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 22:05:49 - INFO - Logger set
+2022-07-08 22:05:49 - INFO - Config file load begin
+2022-07-08 22:05:49 - INFO - Config file load end
+2022-07-08 22:05:52 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 22:06:10 - INFO - Logger set
+2022-07-08 22:06:10 - INFO - Config file load begin
+2022-07-08 22:06:10 - INFO - Config file load end
+2022-07-08 22:06:14 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 22:06:30 - INFO - Logger set
+2022-07-08 22:06:30 - INFO - Config file load begin
+2022-07-08 22:06:30 - INFO - Config file load end
+2022-07-08 22:06:32 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 22:06:54 - INFO - Logger set
+2022-07-08 22:06:54 - INFO - Config file load begin
+2022-07-08 22:06:54 - INFO - Config file load end
+2022-07-08 22:06:56 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 22:07:29 - INFO - Logger set
+2022-07-08 22:07:29 - INFO - Config file load begin
+2022-07-08 22:07:29 - INFO - Config file load end
+2022-07-08 22:07:33 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 22:07:52 - INFO - Logger set
+2022-07-08 22:07:52 - INFO - Config file load begin
+2022-07-08 22:07:52 - INFO - Config file load end
+2022-07-08 22:07:55 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 22:08:40 - INFO - Logger set
+2022-07-08 22:08:40 - INFO - Config file load begin
+2022-07-08 22:08:41 - INFO - Config file load end
+2022-07-08 22:08:41 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 22:09:04 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-08 22:09:23 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': -200}
+2022-07-08 22:09:40 - INFO - Logger set
+2022-07-08 22:09:40 - INFO - Config file load begin
+2022-07-08 22:09:40 - INFO - Config file load end
+2022-07-08 22:09:41 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': -200}
+2022-07-08 22:09:55 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': -200}
+2022-07-08 22:09:55 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': -200}
+2022-07-08 22:10:12 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 779}
+2022-07-08 22:10:24 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 2}
+2022-07-09 09:27:18 - DEBUG - {'id': '62c87c8eb162cb8328bbf29f', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 2}
+2022-07-09 09:33:35 - DEBUG - {'alloweUidList': ['prQUKkIxljVqbHlCKah7T1Rh7l22'], 'itemList': [{'itemDetail': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'modDate': '2022.07.08'}, {'itemDetail': {'offerCollectionId': '62c55fe3e096510c589ef956', 'itemId': '13590', 'itemName': 'terméák2', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'modDate': '2022.07.08'}], 'crDate': '2022.07.08', 'modDate': '2022.07.08', 'boolId': 1}
+2022-07-09 09:34:39 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 09:35:01 - INFO - Logger set
+2022-07-09 09:35:01 - INFO - Config file load begin
+2022-07-09 09:35:01 - INFO - Config file load end
+2022-07-09 09:35:04 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 09:36:05 - INFO - Logger set
+2022-07-09 09:36:05 - INFO - Config file load begin
+2022-07-09 09:36:05 - INFO - Config file load end
+2022-07-09 09:36:07 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 09:36:50 - INFO - Logger set
+2022-07-09 09:36:50 - INFO - Config file load begin
+2022-07-09 09:36:50 - INFO - Config file load end
+2022-07-09 09:36:52 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 09:37:06 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0}
+2022-07-09 09:37:33 - INFO - Logger set
+2022-07-09 09:37:33 - INFO - Config file load begin
+2022-07-09 09:37:33 - INFO - Config file load end
+2022-07-09 09:37:34 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0}
+2022-07-09 09:40:32 - INFO - Logger set
+2022-07-09 09:40:32 - INFO - Config file load begin
+2022-07-09 09:40:32 - INFO - Config file load end
+2022-07-09 09:40:35 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 09:40:35 - DEBUG - boolId present..
+2022-07-09 09:40:45 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0}
+2022-07-09 09:45:25 - INFO - Logger set
+2022-07-09 09:45:25 - INFO - Config file load begin
+2022-07-09 09:45:25 - INFO - Config file load end
+2022-07-09 09:45:30 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 09:46:20 - INFO - Logger set
+2022-07-09 09:46:20 - INFO - Config file load begin
+2022-07-09 09:46:20 - INFO - Config file load end
+2022-07-09 09:46:23 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 09:46:37 - INFO - Logger set
+2022-07-09 09:46:37 - INFO - Config file load begin
+2022-07-09 09:46:37 - INFO - Config file load end
+2022-07-09 09:46:39 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 09:47:33 - INFO - Logger set
+2022-07-09 09:47:33 - INFO - Config file load begin
+2022-07-09 09:47:33 - INFO - Config file load end
+2022-07-09 09:47:34 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 09:48:17 - INFO - Logger set
+2022-07-09 09:48:17 - INFO - Config file load begin
+2022-07-09 09:48:17 - INFO - Config file load end
+2022-07-09 09:48:18 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 09:49:10 - INFO - Logger set
+2022-07-09 09:49:10 - INFO - Config file load begin
+2022-07-09 09:49:10 - INFO - Config file load end
+2022-07-09 09:51:13 - INFO - Logger set
+2022-07-09 09:51:13 - INFO - Config file load begin
+2022-07-09 09:51:13 - INFO - Config file load end
+2022-07-09 09:51:16 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 09:51:16 - DEBUG - $inc
+2022-07-09 09:51:16 - DEBUG - $set
+2022-07-09 09:51:16 - DEBUG - $set
+2022-07-09 09:51:16 - DEBUG - $set
+2022-07-09 09:51:48 - INFO - Logger set
+2022-07-09 09:51:48 - INFO - Config file load begin
+2022-07-09 09:51:49 - INFO - Config file load end
+2022-07-09 09:51:51 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 09:51:51 - DEBUG - $inc
+2022-07-09 09:51:51 - DEBUG - $set
+2022-07-09 09:51:51 - DEBUG - $set
+2022-07-09 09:51:51 - DEBUG - $set
+2022-07-09 09:53:47 - INFO - Logger set
+2022-07-09 09:53:47 - INFO - Config file load begin
+2022-07-09 09:53:47 - INFO - Config file load end
+2022-07-09 09:53:50 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 09:53:50 - DEBUG - {'$inc': {}, '$set': {}}
+2022-07-09 09:59:36 - INFO - Logger set
+2022-07-09 09:59:36 - INFO - Config file load begin
+2022-07-09 09:59:36 - INFO - Config file load end
+2022-07-09 10:00:14 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 10:00:14 - DEBUG - {'$inc': {}, '$set': {}}
+2022-07-09 10:00:35 - INFO - Logger set
+2022-07-09 10:00:35 - INFO - Config file load begin
+2022-07-09 10:00:35 - INFO - Config file load end
+2022-07-09 10:00:37 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 10:00:37 - DEBUG - {'$inc': {}, '$set': {}}
+2022-07-09 10:01:01 - INFO - Logger set
+2022-07-09 10:01:01 - INFO - Config file load begin
+2022-07-09 10:01:01 - INFO - Config file load end
+2022-07-09 10:01:05 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 10:01:05 - DEBUG - {'$inc': {}, '$set': {}}
+2022-07-09 10:02:13 - INFO - Logger set
+2022-07-09 10:02:13 - INFO - Config file load begin
+2022-07-09 10:02:13 - INFO - Config file load end
+2022-07-09 10:02:18 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 10:02:18 - DEBUG - {'$inc': {}, '$set': {}}
+2022-07-09 10:03:30 - INFO - Logger set
+2022-07-09 10:03:30 - INFO - Config file load begin
+2022-07-09 10:03:30 - INFO - Config file load end
+2022-07-09 10:03:36 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 10:03:36 - DEBUG - {'$inc': {}, '$set': {}}
+2022-07-09 10:06:15 - INFO - Logger set
+2022-07-09 10:06:15 - INFO - Config file load begin
+2022-07-09 10:06:15 - INFO - Config file load end
+2022-07-09 10:06:18 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 10:06:18 - DEBUG - {'$inc': {'itemList.$.volume': 10}, '$set': {'itemList.$.boolId': 1}}
+2022-07-09 10:08:39 - INFO - Logger set
+2022-07-09 10:08:39 - INFO - Config file load begin
+2022-07-09 10:08:39 - INFO - Config file load end
+2022-07-09 10:08:48 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 10:08:48 - DEBUG - volume
+2022-07-09 10:08:48 - DEBUG - modDate
+2022-07-09 10:08:48 - DEBUG - checkFlag
+2022-07-09 10:08:48 - DEBUG - boolId
+2022-07-09 10:08:48 - DEBUG - {'$inc': {'itemList.$.volume': 10}, '$set': {'itemList.$.boolId': 1}}
+2022-07-09 10:10:21 - INFO - Logger set
+2022-07-09 10:10:21 - INFO - Config file load begin
+2022-07-09 10:10:21 - INFO - Config file load end
+2022-07-09 10:10:24 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 10:10:24 - DEBUG - volume
+2022-07-09 10:10:24 - DEBUG - modDate
+2022-07-09 10:10:24 - DEBUG - checkFlag
+2022-07-09 10:10:24 - DEBUG - boolId
+2022-07-09 10:10:24 - DEBUG - [{'$inc': {'itemList.$.volume': 10}}, {'$set': {'itemList.$.modDate': '2022.07.09'}}, {'$set': {'itemList.$.checkFlag': 0}}, {'$set': {'itemList.$.boolId': 1}}]
+2022-07-09 10:11:37 - INFO - Logger set
+2022-07-09 10:11:37 - INFO - Config file load begin
+2022-07-09 10:11:37 - INFO - Config file load end
+2022-07-09 10:11:43 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 10:11:43 - DEBUG - volume
+2022-07-09 10:11:43 - DEBUG - modDate
+2022-07-09 10:11:43 - DEBUG - checkFlag
+2022-07-09 10:11:43 - DEBUG - boolId
+2022-07-09 10:12:34 - INFO - Logger set
+2022-07-09 10:12:34 - INFO - Config file load begin
+2022-07-09 10:12:35 - INFO - Config file load end
+2022-07-09 10:12:37 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 10:12:37 - DEBUG - volume
+2022-07-09 10:12:37 - DEBUG - modDate
+2022-07-09 10:12:37 - DEBUG - checkFlag
+2022-07-09 10:12:37 - DEBUG - boolId
+2022-07-09 10:13:41 - INFO - Logger set
+2022-07-09 10:13:41 - INFO - Config file load begin
+2022-07-09 10:13:41 - INFO - Config file load end
+2022-07-09 10:13:44 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 10:13:44 - DEBUG - volume
+2022-07-09 10:17:23 - INFO - Logger set
+2022-07-09 10:17:23 - INFO - Config file load begin
+2022-07-09 10:17:23 - INFO - Config file load end
+2022-07-09 10:17:26 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 10:17:26 - DEBUG - volume
+2022-07-09 10:17:26 - DEBUG - modDate
+2022-07-09 10:17:26 - DEBUG - checkFlag
+2022-07-09 10:17:26 - DEBUG - boolId
+2022-07-09 10:17:26 - DEBUG - {'$inc': {'itemList.$.volume': 10}, '$set': {'itemList.$.boolId': 1}}
+2022-07-09 10:18:53 - INFO - Logger set
+2022-07-09 10:18:53 - INFO - Config file load begin
+2022-07-09 10:18:53 - INFO - Config file load end
+2022-07-09 10:18:57 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 10:18:57 - DEBUG - volume
+2022-07-09 10:18:57 - DEBUG - modDate
+2022-07-09 10:18:57 - DEBUG - checkFlag
+2022-07-09 10:18:57 - DEBUG - boolId
+2022-07-09 10:18:57 - DEBUG - {'$inc': {'itemList.$.volume': 10}, '$set': {'itemList.$.boolId': 1}}
+2022-07-09 10:19:36 - INFO - Logger set
+2022-07-09 10:19:36 - INFO - Config file load begin
+2022-07-09 10:19:36 - INFO - Config file load end
+2022-07-09 10:19:37 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 10:19:37 - DEBUG - volume
+2022-07-09 10:19:37 - DEBUG - {'$inc': {'itemList.$.volume': 10}}
+2022-07-09 10:19:37 - DEBUG - modDate
+2022-07-09 10:19:37 - DEBUG - {'$inc': {'itemList.$.volume': 10}, '$set': {'itemList.$.modDate': '2022.07.09'}}
+2022-07-09 10:19:37 - DEBUG - checkFlag
+2022-07-09 10:19:37 - DEBUG - {'$inc': {'itemList.$.volume': 10}, '$set': {'itemList.$.checkFlag': 0}}
+2022-07-09 10:19:37 - DEBUG - boolId
+2022-07-09 10:19:37 - DEBUG - {'$inc': {'itemList.$.volume': 10}, '$set': {'itemList.$.boolId': 1}}
+2022-07-09 10:19:37 - DEBUG - {'$inc': {'itemList.$.volume': 10}, '$set': {'itemList.$.boolId': 1}}
+2022-07-09 10:25:34 - INFO - Logger set
+2022-07-09 10:25:34 - INFO - Config file load begin
+2022-07-09 10:25:34 - INFO - Config file load end
+2022-07-09 10:25:36 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 10:25:36 - DEBUG - volume
+2022-07-09 10:25:36 - DEBUG - {'$inc': {'itemList.$.volume': 10}}
+2022-07-09 10:25:36 - DEBUG - modDate
+2022-07-09 10:25:36 - DEBUG - {'$inc': {'itemList.$.volume': 10}, '$set': {'itemList.$.modDate': '2022.07.09'}}
+2022-07-09 10:25:36 - DEBUG - checkFlag
+2022-07-09 10:25:36 - DEBUG - {'$inc': {'itemList.$.volume': 10}, '$set': {'itemList.$.checkFlag': 0}}
+2022-07-09 10:25:36 - DEBUG - boolId
+2022-07-09 10:25:36 - DEBUG - {'$inc': {'itemList.$.volume': 10}, '$set': {'itemList.$.boolId': 1}}
+2022-07-09 10:25:36 - DEBUG - {'$inc': {'itemList.$.volume': 10}, '$set': {'itemList.$.boolId': 1}}
+2022-07-09 10:28:30 - INFO - Logger set
+2022-07-09 10:28:30 - INFO - Config file load begin
+2022-07-09 10:28:30 - INFO - Config file load end
+2022-07-09 10:28:33 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 10:28:33 - DEBUG - volume
+2022-07-09 10:28:33 - DEBUG - modDate
+2022-07-09 10:28:33 - DEBUG - checkFlag
+2022-07-09 10:28:33 - DEBUG - boolId
+2022-07-09 10:28:33 - DEBUG - {'$inc': {'itemList.$.volume': 10}, '$set': {'itemList.$.modDate': '2022.07.09', 'itemList.$.checkFlag': 0, 'itemList.$.boolId': 1}}
+2022-07-09 10:29:06 - INFO - Logger set
+2022-07-09 10:29:06 - INFO - Config file load begin
+2022-07-09 10:29:06 - INFO - Config file load end
+2022-07-09 10:29:09 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10, 'modDate': '2022.07.09', 'checkFlag': 0, 'boolId': 1}
+2022-07-09 10:29:09 - DEBUG - volume
+2022-07-09 10:29:09 - DEBUG - modDate
+2022-07-09 10:29:09 - DEBUG - checkFlag
+2022-07-09 10:29:09 - DEBUG - boolId
+2022-07-09 10:29:09 - DEBUG - {'$inc': {'itemList.$.volume': 10}, '$set': {'itemList.$.modDate': '2022.07.09', 'itemList.$.checkFlag': 0, 'itemList.$.boolId': 1}}
+2022-07-09 10:29:40 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': -100, 'modDate': '2022.07.10', 'checkFlag': 1, 'boolId': 1}
+2022-07-09 10:29:40 - DEBUG - volume
+2022-07-09 10:29:40 - DEBUG - modDate
+2022-07-09 10:29:40 - DEBUG - checkFlag
+2022-07-09 10:29:40 - DEBUG - boolId
+2022-07-09 10:29:40 - DEBUG - {'$inc': {'itemList.$.volume': -100}, '$set': {'itemList.$.modDate': '2022.07.10', 'itemList.$.checkFlag': 1, 'itemList.$.boolId': 1}}
+2022-07-09 10:30:05 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': -121, 'modDate': '2022.07.10', 'checkFlag': 0, 'boolId': 0}
+2022-07-09 10:30:05 - DEBUG - volume
+2022-07-09 10:30:05 - DEBUG - modDate
+2022-07-09 10:30:05 - DEBUG - checkFlag
+2022-07-09 10:30:05 - DEBUG - boolId
+2022-07-09 10:30:05 - DEBUG - {'$inc': {'itemList.$.volume': -121}, '$set': {'itemList.$.modDate': '2022.07.10', 'itemList.$.checkFlag': 0, 'itemList.$.boolId': 0}}
+2022-07-09 10:30:22 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-09 10:30:22 - DEBUG - volume
+2022-07-09 10:30:22 - DEBUG - {'$inc': {'itemList.$.volume': 10}}
+2022-07-09 10:31:13 - INFO - Logger set
+2022-07-09 10:31:13 - INFO - Config file load begin
+2022-07-09 10:31:13 - INFO - Config file load end
+2022-07-09 10:32:04 - INFO - Logger set
+2022-07-09 10:32:04 - INFO - Config file load begin
+2022-07-09 10:32:04 - INFO - Config file load end
+2022-07-09 10:51:27 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-09 10:51:27 - DEBUG - volume
+2022-07-09 10:51:27 - DEBUG - {'$inc': {'itemList.$.volume': 10}}
+2022-07-09 10:52:05 - INFO - Logger set
+2022-07-09 10:52:05 - INFO - Config file load begin
+2022-07-09 10:52:05 - INFO - Config file load end
+2022-07-09 10:52:09 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-09 10:52:09 - DEBUG - invoked!
+2022-07-09 10:52:09 - DEBUG - volume
+2022-07-09 10:52:09 - DEBUG - {'$inc': {'itemList.$.volume': 10}}
+2022-07-09 10:55:17 - INFO - Logger set
+2022-07-09 10:55:17 - INFO - Config file load begin
+2022-07-09 10:55:17 - INFO - Config file load end
+2022-07-09 10:55:21 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'modDate': '2022.07.09', 'boolId': 1, 'alloweUidList': 'prQUKkIxljVqbHlCKah7T1Rh7l22'}
+2022-07-09 10:55:21 - DEBUG - invoked!
+2022-07-09 10:55:21 - DEBUG - modDate
+2022-07-09 10:55:21 - DEBUG - boolId
+2022-07-09 10:55:21 - DEBUG - alloweUidList
+2022-07-09 10:55:21 - DEBUG - {'$set': {'itemList.$.modDate': '2022.07.09', 'itemList.$.boolId': 1}, '$push': {'itemList.$.alloweUidList': 'prQUKkIxljVqbHlCKah7T1Rh7l22'}}
+2022-07-09 10:57:48 - INFO - Logger set
+2022-07-09 10:57:48 - INFO - Config file load begin
+2022-07-09 10:57:48 - INFO - Config file load end
+2022-07-09 10:58:20 - INFO - Logger set
+2022-07-09 10:58:20 - INFO - Config file load begin
+2022-07-09 10:58:20 - INFO - Config file load end
+2022-07-09 10:58:24 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-09 10:58:24 - DEBUG - invoked!
+2022-07-09 10:58:24 - DEBUG - volume
+2022-07-09 10:58:24 - DEBUG - {'$inc': {'itemList.$.volume': 10}}
+2022-07-09 10:58:44 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'modDate': '2022.07.09', 'boolId': 1, 'alloweUidList': 'prQUKkIxljVqbHlCKah7T1Rh7l22'}
+2022-07-09 10:58:44 - DEBUG - invoked!
+2022-07-09 10:58:44 - DEBUG - modDate
+2022-07-09 10:58:44 - DEBUG - boolId
+2022-07-09 10:58:44 - DEBUG - alloweUidList
+2022-07-09 10:58:44 - DEBUG - {'$set': {'modDate': '2022.07.09', 'boolId': 1}, '$push': {'alloweUidList': 'prQUKkIxljVqbHlCKah7T1Rh7l22'}}
+2022-07-09 10:59:50 - DEBUG - {'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-09 10:59:50 - DEBUG - invoked!
+2022-07-09 10:59:50 - DEBUG - volume
+2022-07-09 10:59:50 - DEBUG - {'$inc': {'itemList.$.volume': 10}}
+2022-07-09 11:02:24 - INFO - Logger set
+2022-07-09 11:02:24 - INFO - Config file load begin
+2022-07-09 11:02:24 - INFO - Config file load end
+2022-07-09 11:02:30 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'modDate': '2022.07.09', 'boolId': 1, 'alloweUidList': 'prQUKkIxljVqbHlCKah7T1Rh7l22'}
+2022-07-09 11:02:30 - DEBUG - invoked!
+2022-07-09 11:02:30 - DEBUG - modDate
+2022-07-09 11:02:30 - DEBUG - boolId
+2022-07-09 11:02:30 - DEBUG - alloweUidList
+2022-07-09 11:02:30 - DEBUG - {'$set': {'modDate': '2022.07.09', 'boolId': 1}, '$push': {'alloweUidList': 'prQUKkIxljVqbHlCKah7T1Rh7l22'}}
+2022-07-09 11:02:44 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'modDate': '2022.07.09', 'boolId': 1, 'alloweUidList': 'prQUKkIxljVqbHlCKah7T1Rh7l22'}
+2022-07-09 11:02:44 - DEBUG - invoked!
+2022-07-09 11:02:44 - DEBUG - modDate
+2022-07-09 11:02:44 - DEBUG - boolId
+2022-07-09 11:02:44 - DEBUG - alloweUidList
+2022-07-09 11:02:44 - DEBUG - {'$set': {'modDate': '2022.07.09', 'boolId': 1}, '$push': {'alloweUidList': 'prQUKkIxljVqbHlCKah7T1Rh7l22'}}
+2022-07-09 11:03:16 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'modDate': '2022.88.11', 'boolId': 0, 'alloweUidList': 'prQUKkIxljVqbHlCKah7T1Rh7l22'}
+2022-07-09 11:03:16 - DEBUG - invoked!
+2022-07-09 11:03:16 - DEBUG - modDate
+2022-07-09 11:03:16 - DEBUG - boolId
+2022-07-09 11:03:16 - DEBUG - alloweUidList
+2022-07-09 11:03:16 - DEBUG - {'$set': {'modDate': '2022.88.11', 'boolId': 0}, '$push': {'alloweUidList': 'prQUKkIxljVqbHlCKah7T1Rh7l22'}}
+2022-07-09 11:03:20 - DEBUG - {'offerCollectionId': '62c55fe3e096510c589ef814', 'volume': 10}
+2022-07-09 11:03:20 - DEBUG - invoked!
+2022-07-09 11:03:20 - DEBUG - volume
+2022-07-09 11:03:20 - DEBUG - {'$inc': {'itemList.$.volume': 10}}
+2022-07-09 11:09:20 - INFO - Logger set
+2022-07-09 11:09:20 - INFO - Config file load begin
+2022-07-09 11:09:20 - INFO - Config file load end
+2022-07-09 11:09:31 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'modDate': '2022.07.09', 'boolId': 1, 'alloweUidList': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'removeUser': 'Y'}
+2022-07-09 11:09:31 - DEBUG - invoked!
+2022-07-09 11:09:31 - DEBUG - modDate
+2022-07-09 11:09:31 - DEBUG - boolId
+2022-07-09 11:09:31 - DEBUG - alloweUidList
+2022-07-09 11:09:31 - DEBUG - removeUser
+2022-07-09 11:10:18 - INFO - Logger set
+2022-07-09 11:10:18 - INFO - Config file load begin
+2022-07-09 11:10:18 - INFO - Config file load end
+2022-07-09 11:10:21 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'modDate': '2022.07.09', 'boolId': 1, 'alloweUidList': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'removeUser': 'Y'}
+2022-07-09 11:10:21 - DEBUG - invoked!
+2022-07-09 11:10:21 - DEBUG - modDate
+2022-07-09 11:10:21 - DEBUG - boolId
+2022-07-09 11:10:21 - DEBUG - alloweUidList
+2022-07-09 11:10:21 - DEBUG - {'$set': {'modDate': '2022.07.09', 'boolId': 1}, '$push': {'alloweUidList': 'prQUKkIxljVqbHlCKah7T1Rh7l22'}}
+2022-07-09 11:11:26 - INFO - Logger set
+2022-07-09 11:11:26 - INFO - Config file load begin
+2022-07-09 11:11:26 - INFO - Config file load end
+2022-07-09 11:11:29 - DEBUG - {'id': '62c84833dc7127012023d3eb', 'modDate': '2022.07.09', 'boolId': 1, 'alloweUidList': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'removeUser': 'Y'}
+2022-07-09 11:11:29 - DEBUG - invoked!
+2022-07-09 11:11:29 - DEBUG - modDate
+2022-07-09 11:11:29 - DEBUG - boolId
+2022-07-09 11:11:29 - DEBUG - alloweUidList
+2022-07-09 11:11:29 - DEBUG - {'$set': {'modDate': '2022.07.09', 'boolId': 1}, '$push': {'alloweUidList': 'prQUKkIxljVqbHlCKah7T1Rh7l22'}}
+2022-07-09 11:11:29 - DEBUG - removeUser YES
+2022-07-09 11:11:29 - DEBUG - {'$set': {'modDate': '2022.07.09', 'boolId': 1}, '$pull': {'alloweUidList': 'prQUKkIxljVqbHlCKah7T1Rh7l22'}}
+2022-07-09 11:12:06 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'modDate': '2022.07.09', 'boolId': 1, 'alloweUidList': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'removeUser': 'Y'}
+2022-07-09 11:12:06 - DEBUG - invoked!
+2022-07-09 11:12:06 - DEBUG - modDate
+2022-07-09 11:12:06 - DEBUG - boolId
+2022-07-09 11:12:06 - DEBUG - alloweUidList
+2022-07-09 11:12:06 - DEBUG - {'$set': {'modDate': '2022.07.09', 'boolId': 1}, '$push': {'alloweUidList': 'prQUKkIxljVqbHlCKah7T1Rh7l22'}}
+2022-07-09 11:12:06 - DEBUG - removeUser YES
+2022-07-09 11:12:06 - DEBUG - {'$set': {'modDate': '2022.07.09', 'boolId': 1}, '$pull': {'alloweUidList': 'prQUKkIxljVqbHlCKah7T1Rh7l22'}}
+2022-07-09 11:12:19 - DEBUG - {'id': '62c92f4f0551bf8c669f8890', 'modDate': '2022.07.09', 'boolId': 1, 'alloweUidList': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'removeUser': 'N'}
+2022-07-09 11:12:19 - DEBUG - invoked!
+2022-07-09 11:12:19 - DEBUG - modDate
+2022-07-09 11:12:19 - DEBUG - boolId
+2022-07-09 11:12:19 - DEBUG - alloweUidList
+2022-07-09 11:12:19 - DEBUG - {'$set': {'modDate': '2022.07.09', 'boolId': 1}, '$push': {'alloweUidList': 'prQUKkIxljVqbHlCKah7T1Rh7l22'}}
+2022-07-09 14:09:04 - INFO - Logger set
+2022-07-09 14:09:04 - INFO - Config file load begin
+2022-07-09 14:09:04 - INFO - Config file load end
+2022-07-09 14:27:10 - INFO - Logger set
+2022-07-09 14:27:10 - INFO - Config file load begin
+2022-07-09 14:27:10 - INFO - Config file load end
+2022-07-09 14:28:04 - INFO - Logger set
+2022-07-09 14:28:04 - INFO - Config file load begin
+2022-07-09 14:28:04 - INFO - Config file load end
+2022-07-09 14:29:07 - DEBUG - item_name: sor
+2022-07-09 14:29:43 - INFO - Logger set
+2022-07-09 14:29:43 - INFO - Config file load begin
+2022-07-09 14:29:43 - INFO - Config file load end
+2022-07-09 14:29:56 - DEBUG - item_name: sor
+2022-07-09 14:29:58 - DEBUG - item_name: sor
+2022-07-09 14:30:29 - INFO - Logger set
+2022-07-09 14:30:29 - INFO - Config file load begin
+2022-07-09 14:30:29 - INFO - Config file load end
+2022-07-09 14:30:31 - DEBUG - item_name: sor
+2022-07-09 14:30:32 - DEBUG - max_key: 2022_07_11_02
+2022-07-09 14:31:03 - DEBUG - {'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'itemName': 'tej', 'crDate': '2022.07.08', 'boolId': 1, 'removeDate': '2022.07.08'}
+2022-07-09 14:31:15 - DEBUG - {'alloweUidList': ['prQUKkIxljVqbHlCKah7T1Rh7l22'], 'itemList': [{'itemDetail': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'modDate': '2022.07.08'}, {'itemDetail': {'offerCollectionId': '62c55fe3e096510c589ef956', 'itemId': '13590', 'itemName': 'terméák2', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'modDate': '2022.07.08'}], 'crDate': '2022.07.08', 'modDate': '2022.07.08', 'boolId': 1}
+2022-07-09 14:32:00 - DEBUG - {'id': '62c9751311428baf9e4694f3', 'newItem': {'item': {'offerCollectionId': '12345', 'itemId': '13590', 'itemName': 'geza', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'removeDate': '2022.07.08'}}
+2022-07-09 15:14:16 - DEBUG - None
+2022-07-09 15:14:28 - DEBUG - None
+2022-07-09 15:15:11 - DEBUG - None
+2022-07-09 15:17:08 - INFO - Logger set
+2022-07-09 15:17:08 - INFO - Config file load begin
+2022-07-09 15:17:08 - INFO - Config file load end
+2022-07-09 15:17:14 - DEBUG - None
+2022-07-09 15:18:57 - DEBUG - {'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'itemName': 'tej', 'crDate': '2022-07-09 15:17', 'boolId': 1}
+2022-07-09 15:19:09 - DEBUG - None
+2022-07-09 20:39:49 - INFO - Logger set
+2022-07-09 20:39:49 - INFO - Config file load begin
+2022-07-09 20:39:49 - INFO - Config file load end
+2022-07-09 20:40:49 - INFO - Logger set
+2022-07-09 20:40:49 - INFO - Config file load begin
+2022-07-09 20:40:49 - INFO - Config file load end
+2022-07-09 20:41:05 - DEBUG - {'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'itemName': 'tej', 'crDate': '2022-07-09 15:17', 'boolId': 1}
+2022-07-09 20:41:14 - DEBUG - {'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'itemName': 'tej', 'crDate': '2022-07-09 15:17', 'boolId': 0}
+2022-07-09 20:41:14 - DEBUG - invoked!
+2022-07-09 20:42:04 - INFO - Logger set
+2022-07-09 20:42:04 - INFO - Config file load begin
+2022-07-09 20:42:04 - INFO - Config file load end
+2022-07-09 20:42:09 - DEBUG - {'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'itemName': 'tej', 'crDate': '2022-07-09 15:17', 'boolId': 0}
+2022-07-09 20:42:09 - DEBUG - create_query_param invoked!
+2022-07-09 20:42:56 - INFO - Logger set
+2022-07-09 20:42:56 - INFO - Config file load begin
+2022-07-09 20:42:56 - INFO - Config file load end
+2022-07-09 20:42:59 - DEBUG - {'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'itemName': 'tej', 'crDate': '2022-07-09 15:17', 'boolId': 0}
+2022-07-09 20:42:59 - DEBUG - create_query_param invoked!
+2022-07-09 20:44:28 - DEBUG - {'id': '62c9cbc118865b1a14530e24', 'boolId': 0, 'modDate': '2022.07.08'}
+2022-07-09 20:44:28 - DEBUG - create_query_param invoked!
+2022-07-09 20:44:28 - DEBUG - {'$set': {'boolId': 0, 'modDate': '2022.07.08'}}
+2022-07-09 20:51:39 - DEBUG - {'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'itemName': 'vaj', 'crDate': '2022-07-09 20:51', 'boolId': '1'}
+2022-07-09 20:58:01 - INFO - Logger set
+2022-07-09 20:58:01 - INFO - Config file load begin
+2022-07-09 20:58:01 - INFO - Config file load end
+2022-07-09 20:59:15 - INFO - Logger set
+2022-07-09 20:59:15 - INFO - Config file load begin
+2022-07-09 20:59:15 - INFO - Config file load end
+2022-07-09 21:00:36 - INFO - Logger set
+2022-07-09 21:00:36 - INFO - Config file load begin
+2022-07-09 21:00:36 - INFO - Config file load end
+2022-07-09 21:00:41 - DEBUG - invoked with uid: prQUKkIxljVqbHlCKah7T1Rh7l22
+2022-07-09 21:01:05 - INFO - Logger set
+2022-07-09 21:01:05 - INFO - Config file load begin
+2022-07-09 21:01:05 - INFO - Config file load end
+2022-07-09 21:02:59 - INFO - Logger set
+2022-07-09 21:02:59 - INFO - Config file load begin
+2022-07-09 21:02:59 - INFO - Config file load end
+2022-07-09 21:03:04 - DEBUG - get_offer_listener_by_user invoked with uid: prQUKkIxljVqbHlCKah7T1Rh7l22
+2022-07-09 21:16:34 - DEBUG - {'_id': None, 'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'itemName': 'tej', 'crDate': '2022-07-09 21:16', 'boolId': 1, 'modDate': None}
+2022-07-09 21:17:30 - DEBUG - {'_id': None, 'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'itemName': 'vaj', 'crDate': '2022-07-09 21:17', 'boolId': 1, 'modDate': None}
+2022-07-09 21:24:00 - DEBUG - {'_id': None, 'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'itemName': 'tej', 'crDate': '2022-07-09 21:24', 'boolId': 1, 'modDate': None}
+2022-07-09 21:27:19 - DEBUG - {'_id': None, 'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'itemName': 'sor', 'crDate': '2022-07-09 21:27', 'boolId': 1, 'modDate': None}
+2022-07-09 21:28:22 - INFO - Logger set
+2022-07-09 21:28:22 - INFO - Config file load begin
+2022-07-09 21:28:22 - INFO - Config file load end
+2022-07-09 21:31:15 - DEBUG - {'_id': None, 'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'itemName': 'tej', 'crDate': '2022-07-09 21:31', 'boolId': 1, 'modDate': None}
+2022-07-09 21:34:03 - DEBUG - {'_id': None, 'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'itemName': 'tej', 'crDate': '2022-07-09 21:34', 'boolId': 1, 'modDate': None}
+2022-07-09 21:36:29 - DEBUG - None
+2022-07-09 21:37:57 - INFO - Logger set
+2022-07-09 21:37:57 - INFO - Config file load begin
+2022-07-09 21:37:57 - INFO - Config file load end
+2022-07-09 21:38:07 - DEBUG - None
+2022-07-09 21:40:54 - DEBUG - {'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'itemName': 'tej', 'crDate': '2022-07-09 21:40', 'boolId': 1, 'modDate': None}
+2022-07-09 21:41:28 - DEBUG - {'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'itemName': 'sor', 'crDate': '2022-07-09 21:41', 'boolId': 1, 'modDate': None}
+2022-07-09 21:41:48 - DEBUG - get_offer_listener_by_user invoked with uid: prQUKkIxljVqbHlCKah7T1Rh7l22
+2022-07-09 21:42:32 - INFO - Logger set
+2022-07-09 21:42:32 - INFO - Config file load begin
+2022-07-09 21:42:32 - INFO - Config file load end
