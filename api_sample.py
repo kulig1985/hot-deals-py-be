@@ -165,7 +165,7 @@ class HotDealsHungaryApi:
     def get_offer_listener_by_user(self, uid):
         try:
             self.log.debug(f'get_offer_listener_by_user invoked with uid: {uid}')
-            return Response(dumps(self.offer_listener_collection.find({'uid': uid, 'boolId' : 0})), 200, mimetype='application/json')
+            return Response(dumps(self.offer_listener_collection.find({'uid': uid, 'boolId': 1})), 200, mimetype='application/json')
 
         except Exception as e:
             return Response(e, 500, mimetype='application/json')
@@ -237,7 +237,7 @@ class HotDealsHungaryApi:
             mongo_result = self.shopping_list_collection.update_one(
                 find_param,
                 query_param_dict)
-    
+
             return Response(dumps({'matchedCount': mongo_result.matched_count}), 201, mimetype='application/json')
 
         except Exception as e:
