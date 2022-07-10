@@ -165,7 +165,7 @@ class HotDealsHungaryApi:
     def get_offer_listener_by_user(self, uid):
         try:
             self.log.debug(f'get_offer_listener_by_user invoked with uid: {uid}')
-            return Response(dumps(self.offer_listener_collection.find({'uid': uid})), 200, mimetype='application/json')
+            return Response(dumps(self.offer_listener_collection.find({'uid': uid, 'boolId' : 0})), 200, mimetype='application/json')
 
         except Exception as e:
             return Response(e, 500, mimetype='application/json')
@@ -225,17 +225,19 @@ class HotDealsHungaryApi:
 
             fill_value = ''
             query_param_dict = self.create_query_param(data, fill_value)
+            find_param = {'_id': ObjectId(data['id'])}
 
             if data['removeUser'] == 'Y':
-                query_param_dict['$pull'] = query_param_dict['$push']
-                del query_param_dict['$push']
-                self.log.debug('removeUser YES')
+                find_param.update({'alloweUidList.uid': data['alloweUidList']['uid']})
+                query_param_dict = {'$set': {'alloweUidList.$.boolId': data['alloweUidList']['boolId'],
+                                    'alloweUidList.$.modDate': data['alloweUidList']['modDate']}}
                 self.log.debug(query_param_dict)
+                self.log.debug(find_param)
 
             mongo_result = self.shopping_list_collection.update_one(
-                {'_id': ObjectId(data['id'])},
+                find_param,
                 query_param_dict)
-
+    
             return Response(dumps({'matchedCount': mongo_result.matched_count}), 201, mimetype='application/json')
 
         except Exception as e:
@@ -244,20 +246,20 @@ class HotDealsHungaryApi:
 
     def modify_offer_listener(self):
 
-        #try:
-        data = request.get_json()
-        self.log.debug(data)
+        try:
+            data = request.get_json()
+            self.log.debug(data)
 
-        fill_value = ''
-        query_param_dict = self.create_query_param(data, fill_value)
+            fill_value = ''
+            query_param_dict = self.create_query_param(data, fill_value)
 
-        mongo_result = self.offer_listener_collection.update_one(
-            {'_id': ObjectId(data['id'])}, query_param_dict)
+            mongo_result = self.offer_listener_collection.update_one(
+                {'_id': ObjectId(data['id'])}, query_param_dict)
 
-        return Response(dumps({'matchedCount': str(mongo_result.matched_count)}), 201, mimetype='application/json')
+            return Response(dumps({'matchedCount': str(mongo_result.matched_count)}), 201, mimetype='application/json')
 
-        #except Exception as e:
-        #    return Response(e, 500, mimetype='application/json')
+        except Exception as e:
+            return Response(e, 500, mimetype='application/json')
 
 
 

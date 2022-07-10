@@ -10,11 +10,27 @@ Collections
 "modDate": "2022.07.08"
 }
 
+-----MODIFY OFFER_LISTENER------
+{
+"id": "prQUKkIxljVqbHlCKah7T1Rh7l22",
+"boolId": 1,
+"modDate": "2022.07.08"
+}
+
 
 ---CREATE SHOPPING-LIST-----
 {
    "alloweUidList":[
-      "prQUKkIxljVqbHlCKah7T1Rh7l22"
+   {"uid": "prQUKkIxljVqbHlCKah7T1Rh7l22",
+    "role": "creator",
+    "boolId":1,
+    "crDate":"2022.06.10",
+    "modDate":"2022.07.10"},
+    {"uid": "prQUKkIxljVqbHlCKah7T1Rh7l22",
+     "role": "subscriber",
+     "boolId":1,
+     "crDate":"2022.06.10",
+     "modDate":"2022.07.10"}
    ],
    "itemList":[
       {
@@ -107,6 +123,15 @@ Collections
 "id": "62c84833dc7127012023d3eb",
 "modDate": "2022.07.09",
 "boolId":1,
-"alloweUidList": "prQUKkIxljVqbHlCKah7T1Rh7l22",
-"removeUser": "Y"
+"alloweUidList": {"uid": "1234",
+     "role": "subscriber",
+     "boolId":1,
+     "crDate":"2022.06.10"},
+"removeUser": "N"
+}
+
+{
+"id": "62cb1e5b2a952aa820a63333",
+"boolId":0,
+"removeUser": "N"
 }
