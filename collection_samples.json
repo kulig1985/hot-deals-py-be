@@ -127,7 +127,8 @@ Collections
      "uid": "skjdhfksdjhfgkjsdgflksdf345",
      "boolId":0,
      "modDate": "2022.09.09"},
-"removeUser": "Y"
+"removeUser": "Y",
+"boolId":0,
 }
 --close list
 {

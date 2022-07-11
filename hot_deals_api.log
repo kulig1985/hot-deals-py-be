@@ -1171,3 +1171,6 @@
 2022-07-11 08:24:16 - DEBUG - {'$push': {'alloweUidList': {'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'boolId': 0, 'modDate': '2022.09.09'}}}
 2022-07-11 08:24:16 - DEBUG - {'$set': {'alloweUidList.$.boolId': 0, 'alloweUidList.$.modDate': '2022.09.09'}}
 2022-07-11 08:24:16 - DEBUG - {'_id': ObjectId('62cbc0986a2078a5359e8749'), 'alloweUidList.uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22'}
+2022-07-11 13:39:14 - INFO - Logger set
+2022-07-11 13:39:14 - INFO - Config file load begin
+2022-07-11 13:39:14 - INFO - Config file load end

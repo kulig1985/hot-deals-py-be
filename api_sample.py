@@ -177,7 +177,7 @@ class HotDealsHungaryApi:
     def get_shopping_list_by_user(self, uid):
         try:
             self.log.debug(f'get_shopping_list_by_user invoked with uisd: {uid}')
-            return Response(dumps(self.offer_listener_collection.find({'alloweUidList.uid': uid,
+            return Response(dumps(self.shopping_list_collection.find({'alloweUidList.uid': uid,
                                                                        'alloweUidList.boolId': 1, 'boolId': 1})), 200,
                             mimetype='application/json')
 
