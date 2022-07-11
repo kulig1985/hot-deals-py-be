@@ -43,6 +43,10 @@ class HotDealsHungaryApi:
         def __get_offer_listener_by_user(uid):
             return self.get_offer_listener_by_user(uid)
 
+        @self.app.route('/get_shopping_list_by_user/<uid>', methods=['GET'])
+        def __get_shopping_list_by_user(uid):
+            return self.get_shopping_list_by_user(uid)
+
         @self.app.route('/create_offer_listener', methods=['POST'])
         def __create_offer_listener():
             return self.create_offer_listener()
@@ -170,6 +174,16 @@ class HotDealsHungaryApi:
         except Exception as e:
             return Response(e, 500, mimetype='application/json')
 
+    def get_shopping_list_by_user(self, uid):
+        try:
+            self.log.debug(f'get_shopping_list_by_user invoked with uisd: {uid}')
+            return Response(dumps(self.offer_listener_collection.find({'alloweUidList.uid': uid,
+                                                                       'alloweUidList.boolId': 1, 'boolId': 1})), 200,
+                            mimetype='application/json')
+
+        except Exception as e:
+            return Response(e, 500, mimetype='application/json')
+
     def create_offer_listener(self):
         try:
             data = request.get_json()
@@ -260,9 +274,6 @@ class HotDealsHungaryApi:
 
         except Exception as e:
             return Response(e, 500, mimetype='application/json')
-
-
-
 
 def main():
     server = HotDealsHungaryApi(__name__)

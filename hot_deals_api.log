@@ -1142,3 +1142,32 @@
 2022-07-10 21:01:46 - DEBUG - {'id': '62cb1e5b2a952aa820a63333', 'boolId': 1, 'removeUser': 'N'}
 2022-07-10 21:01:46 - DEBUG - create_query_param invoked!
 2022-07-10 21:01:46 - DEBUG - {'$set': {'boolId': 1}}
+2022-07-11 08:09:53 - DEBUG - {'alloweUidList': [{'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'role': 'creator', 'boolId': 1, 'crDate': '2022.06.10', 'modDate': '2022.07.10'}, {'uid': 'skjdhfksdjhfgkjsdgflksdf345', 'role': 'subscriber', 'boolId': 1, 'crDate': '2022.06.10', 'modDate': '2022.07.10'}], 'itemList': [{'itemDetail': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'modDate': '2022.07.08'}, {'itemDetail': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'modDate': '2022.07.08'}], 'crDate': '2022.07.08', 'modDate': '2022.07.08', 'boolId': 1}
+2022-07-11 08:18:00 - DEBUG - {'alloweUidList': [{'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'role': 'creator', 'boolId': 1, 'crDate': '2022.06.10', 'modDate': '2022.07.10'}, {'uid': 'skjdhfksdjhfgkjsdgflksdf345', 'role': 'subscriber', 'boolId': 1, 'crDate': '2022.06.10', 'modDate': '2022.07.10'}], 'itemList': [{'itemDetail': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'modDate': '2022.07.08'}, {'itemDetail': {'offerCollectionId': '62c55fe3e096510c589ef814', 'itemId': '13590', 'itemName': 'HÚSMESTER Friss grillcsirke, /kg ', 'itemCleanName': 'husmester friss grillcsirke, /kg ', 'imageUrl': 'https://s7g10.scene7.com/is/image/aldi/KW27_04_hetvegi_akciomania_03', 'price': 849, 'measure': 'kg', 'salesStart': 'N.a', 'source': 'szuper-ajanlatok-mindennap', 'runDate': '2022.07.06-10:52:32', 'shopName': 'aldi', 'timeKey': '2022_07_11_02'}, 'crDate': '2022.07.08', 'checkFlag': 0, 'boolId': 1, 'volume': 1, 'modDate': '2022.07.08'}], 'crDate': '2022.07.08', 'modDate': '2022.07.08', 'boolId': 1}
+2022-07-11 08:21:02 - DEBUG - {'id': '62cbc0986a2078a5359e8749', 'boolId': 0, 'removeUser': 'Y'}
+2022-07-11 08:21:02 - DEBUG - create_query_param invoked!
+2022-07-11 08:21:02 - DEBUG - {'$set': {'boolId': 0}}
+2022-07-11 08:21:34 - DEBUG - {'id': '62cbc0986a2078a5359e8749', 'boolId': 0, 'removeUser': 'Y'}
+2022-07-11 08:21:34 - DEBUG - create_query_param invoked!
+2022-07-11 08:21:34 - DEBUG - {'$set': {'boolId': 0}}
+2022-07-11 08:21:58 - INFO - Logger set
+2022-07-11 08:21:58 - INFO - Config file load begin
+2022-07-11 08:21:58 - INFO - Config file load end
+2022-07-11 08:22:09 - DEBUG - {'id': '62cbc0986a2078a5359e8749', 'boolId': 0, 'removeUser': 'Y'}
+2022-07-11 08:22:09 - DEBUG - create_query_param invoked!
+2022-07-11 08:22:09 - DEBUG - {'$set': {'boolId': 0}}
+2022-07-11 08:22:57 - DEBUG - {'id': '62cb1e5b2a952aa820a63333', 'alloweUidList': {'uid': 'skjdhfksdjhfgkjsdgflksdf345', 'boolId': 0, 'modDate': '2022.09.09'}, 'removeUser': 'Y'}
+2022-07-11 08:22:57 - DEBUG - create_query_param invoked!
+2022-07-11 08:22:57 - DEBUG - {'$push': {'alloweUidList': {'uid': 'skjdhfksdjhfgkjsdgflksdf345', 'boolId': 0, 'modDate': '2022.09.09'}}}
+2022-07-11 08:22:57 - DEBUG - {'$set': {'alloweUidList.$.boolId': 0, 'alloweUidList.$.modDate': '2022.09.09'}}
+2022-07-11 08:22:57 - DEBUG - {'_id': ObjectId('62cb1e5b2a952aa820a63333'), 'alloweUidList.uid': 'skjdhfksdjhfgkjsdgflksdf345'}
+2022-07-11 08:23:38 - DEBUG - {'id': '62cbc0986a2078a5359e8749', 'alloweUidList': {'uid': 'skjdhfksdjhfgkjsdgflksdf345', 'boolId': 0, 'modDate': '2022.09.09'}, 'removeUser': 'Y'}
+2022-07-11 08:23:38 - DEBUG - create_query_param invoked!
+2022-07-11 08:23:38 - DEBUG - {'$push': {'alloweUidList': {'uid': 'skjdhfksdjhfgkjsdgflksdf345', 'boolId': 0, 'modDate': '2022.09.09'}}}
+2022-07-11 08:23:38 - DEBUG - {'$set': {'alloweUidList.$.boolId': 0, 'alloweUidList.$.modDate': '2022.09.09'}}
+2022-07-11 08:23:38 - DEBUG - {'_id': ObjectId('62cbc0986a2078a5359e8749'), 'alloweUidList.uid': 'skjdhfksdjhfgkjsdgflksdf345'}
+2022-07-11 08:24:16 - DEBUG - {'id': '62cbc0986a2078a5359e8749', 'alloweUidList': {'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'boolId': 0, 'modDate': '2022.09.09'}, 'removeUser': 'Y'}
+2022-07-11 08:24:16 - DEBUG - create_query_param invoked!
+2022-07-11 08:24:16 - DEBUG - {'$push': {'alloweUidList': {'uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22', 'boolId': 0, 'modDate': '2022.09.09'}}}
+2022-07-11 08:24:16 - DEBUG - {'$set': {'alloweUidList.$.boolId': 0, 'alloweUidList.$.modDate': '2022.09.09'}}
+2022-07-11 08:24:16 - DEBUG - {'_id': ObjectId('62cbc0986a2078a5359e8749'), 'alloweUidList.uid': 'prQUKkIxljVqbHlCKah7T1Rh7l22'}
