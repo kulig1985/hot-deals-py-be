@@ -28,7 +28,7 @@ class HotDealsHungaryApi:
         self.operation_dict = {'boolId': '$set',
                                'checkFlag': '$set',
                                'modDate': '$set',
-                               'volume': '$inc',
+                               'volume': '$set',
                                'alloweUidList': '$push'}
 
         @self.app.route('/', methods=['GET'])
