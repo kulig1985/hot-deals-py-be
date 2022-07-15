@@ -195,13 +195,13 @@ class HotDealsHungaryApi:
 
 
     def create_shopping_list(self):
-        try:
-            data = request.get_json()
-            self.log.debug(data)
-            mongo_result = self.shopping_list_collection.insert_one(data)
-            return Response(dumps({'id' : str(mongo_result.inserted_id)}), 201, mimetype='application/json')
-        except Exception as e:
-            return Response(e,500, mimetype='application/json')
+        #try:
+        data = request.get_json()
+        self.log.debug(data)
+        mongo_result = self.shopping_list_collection.insert_one(data)
+        return Response(dumps({'id' : str(mongo_result.inserted_id)}), 201, mimetype='application/json')
+        #except Exception as e:
+        #    return Response(e,500, mimetype='application/json')
 
 
     def add_item_to_shopping_list(self):
@@ -211,7 +211,7 @@ class HotDealsHungaryApi:
             mongo_result = self.shopping_list_collection.update_one({"_id": ObjectId(data['id'])},
                                                                     {'$push': {'itemList': data['newItem']}}, upsert=True)
 
-            return Response(dumps({'id': str(mongo_result.upserted_id)}), 201, mimetype='application/json')
+            return Response(dumps({'id': str(mongo_result.matched_count)}), 201, mimetype='application/json')
 
         except Exception as e:
             return Response(e, 500, mimetype='application/json')
@@ -224,8 +224,9 @@ class HotDealsHungaryApi:
             fill_value = 'itemList.$.'
             query_param_dict = self.create_query_param(data, fill_value)
 
-            mongo_result = self.shopping_list_collection.update_one(
-                {'itemList.itemDetail.offerCollectionId': data['offerCollectionId']}, query_param_dict)
+            mongo_result = self.shopping_list_collection.update_one({"_id": ObjectId(data['id']),
+                                                                     'itemList.itemDetail.offerCollectionId': data['offerCollectionId']},
+                                                                    query_param_dict)
 
             return Response(dumps({'matchedCount': str(mongo_result.matched_count)}), 201, mimetype='application/json')
 
