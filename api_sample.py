@@ -104,7 +104,13 @@ class HotDealsHungaryApi:
         try:
             log = logging.getLogger('LOG')
             log.setLevel(logging.DEBUG)
-            fh = logging.FileHandler('hot_deals_api.log', encoding="utf-8")
+
+            if platform.platform()[:platform.platform().index('-')].lower() == 'macos':
+                fh = logging.FileHandler('/Users/kuligabor/Documents/HotDealsHungary/log/hot_deals_api.log',
+                                         encoding="utf-8")
+            else:
+                fh = logging.FileHandler('/data/log/hot_deals_api.log',
+                                         encoding="utf-8")
             fh.setLevel(logging.DEBUG)
 
             ch = logging.StreamHandler()
