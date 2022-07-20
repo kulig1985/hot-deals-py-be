@@ -19,7 +19,7 @@ Collections
 
 
 ---CREATE SHOPPING-LIST-----
-{
+[{ "listName" : "Gábor lista",
    "alloweUidList":[
    {"uid": "prQUKkIxljVqbHlCKah7T1Rh7l22",
     "role": "creator",
@@ -79,7 +79,7 @@ Collections
    "crDate":"2022.07.08",
    "modDate":"2022.07.08",
    "boolId":1
-}
+}]
 
 -----ADD ITEM TO SHOPPING LIST-----
 

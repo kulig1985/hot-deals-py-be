@@ -167,7 +167,8 @@ class HotDealsHungaryApi:
 
             return Response(dumps(self.offer_collection.find({'$and': [
                                                 {'itemCleanName': {'$regex' : r'\b' + item_name + r'\b'}},
-                                                {'timeKey': {'$eq': max_key}}
+                                                {'timeKey': {'$eq': max_key}},
+                                                {'isSales': 1}
                                                 ]})), 200, mimetype='application/json')
         except Exception as e:
             return Response(e, 500, mimetype='application/json')
@@ -229,6 +230,8 @@ class HotDealsHungaryApi:
 
             fill_value = 'itemList.$.'
             query_param_dict = self.create_query_param(data, fill_value)
+
+            self.log.debug(f'query_param_dict: {query_param_dict}')
 
             mongo_result = self.shopping_list_collection.update_one({"_id": ObjectId(data['id']),
                                                                      'itemList.itemDetail.offerCollectionId': data['offerCollectionId']},
