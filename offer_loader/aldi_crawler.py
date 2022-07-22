@@ -62,10 +62,10 @@ class AldiCrawler(OfferHelper):
 
         counter = 1
 
-        for url in all_link[:2]: #Todo remove it!
+        for url in all_link:
 
             try:
-                time.sleep(3)
+                time.sleep(1)
                 self.log.debug(f'AldiCrawler crawl url: {url} done {counter} from {len(all_link)}')
                 counter = counter + 1
 

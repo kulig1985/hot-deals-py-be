@@ -80,10 +80,10 @@ class TescoCrawler(OfferHelper):
         all_items = []
         counter = 1
 
-        for t_link in all_tesco_link[:2]: #TODO remove it!
+        for t_link in all_tesco_link:
 
             try:
-                time.sleep(3)
+                time.sleep(1)
                 self.log.debug(f'TescoCrawler crawl url: {t_link} done {counter} from {len(all_tesco_link)}')
                 counter = counter + 1
 

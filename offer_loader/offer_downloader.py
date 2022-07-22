@@ -117,9 +117,9 @@ class OfferLoader(Base):
             self.log.debug(f'all_offer_df len: {len(all_offer_df)}')
             self.log.debug(f'sales offer len: {len(all_offer_df.loc[all_offer_df["isSales"] == 1])}')
 
-            # names = all_offer_df["itemName"]
-            # self.log.debug(f'duplicated offers len: '
-            #               f'{len(all_offer_df[names.isin(names[names.duplicated()])].sort_values("itemName"))}')
+            names = all_offer_df["itemName"]
+            self.log.debug(f'duplicated offers len: '
+                           f'{len(all_offer_df[names.isin(names[names.duplicated()])].sort_values("itemName"))}')
 
             all_offer_df = all_offer_df.drop_duplicates(subset=['itemName'], keep='first')
             self.log.debug(f'all_offer_df len after drop dupliactes: {len(all_offer_df)}')
@@ -137,7 +137,7 @@ class OfferLoader(Base):
 
             self.log.debug('Offer crawler start at: ' + str(end_date.strftime('%Y:%m:%d %H:%M:%S')))
             diff = end_date - start_date
-            self.log.debug(f'Total run time: {diff.total_seconds() / 60} minutes')
+            self.log.debug(f'Total run time: {round(diff.total_seconds() / 60 , 2)} minutes')
 
 
         else:
@@ -152,7 +152,7 @@ class OfferLoader(Base):
         mongo_url = f'mongodb://{user_name}:{password}{host}'
         client = MongoClient(mongo_url)
         db = client['offer']
-        offer_collection = db['offerCollectionTst'] #Todo change it!
+        offer_collection = db['offerCollection']
 
         data_dict = all_offer_df.to_dict("records")
 

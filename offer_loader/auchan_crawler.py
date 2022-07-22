@@ -74,10 +74,10 @@ class AuchanCrawler(OfferHelper):
 
         all_items = []
         counter = 1
-        for link in all_auchan_link[:2]: #TODO remove it!
+        for link in all_auchan_link:
 
             try:
-                time.sleep(3)
+                time.sleep(1)
                 self.log.debug(f'AuchanCrawler crawl url: {link} done {counter} from {len(all_auchan_link)}')
                 response = requests.get(link, headers=self.get_auth_header(token))
                 counter = counter + 1

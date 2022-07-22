@@ -66,10 +66,10 @@ class SparCrawler(OfferHelper):
 
         all_items = []
         counter = 1
-        for url in all_spar_link[:2]: #TODO remove it!
+        for url in all_spar_link: #TODO remove it!
 
             try:
-                time.sleep(3)
+                time.sleep(1)
                 response = requests.get(url, headers=self.get_fake_headers(search=True))
                 self.log.debug(f'SparCrawler crawl url: {url} done {counter} from {len(all_spar_link)}')
                 counter = counter + 1
