@@ -47,9 +47,10 @@ class Base(ABC):
             config = ConfigParser()
 
             if platform.platform()[:platform.platform().index('-')].lower() == 'macos':
-                config_path = '/Users/kuligabor/Documents/HotDealsHungary/hot-deals-py-be/mongo.cfg'
+                config_path = '/Users/kuligabor/Documents/HotDealsHungary/hot-deals-py-be/py_be_config_loader.cfg'
             else:
-                config_path = '/data/hot-deals-py-be/mongo.cfg'
+                config_path = '/data/hot-deals-py-be/py_be_config_loader.cfg'
+
             config.read(config_path, encoding='utf-8')
 
             self.log.info("Config file load end")

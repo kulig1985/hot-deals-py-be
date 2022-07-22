@@ -11,8 +11,9 @@ import time
 
 class LidlCrawler(OfferHelper):
 
-    def __init__(self, log):
+    def __init__(self, log, config):
         self.log = log
+        self.config = config
 
     def get_fake_headers(self):
 
@@ -56,6 +57,10 @@ class LidlCrawler(OfferHelper):
         all_items = []
 
         counter = 1
+
+        limit_offer_load = int(self.config.get('MAIN', 'limit_offer_load'))
+        if limit_offer_load != 0:
+            all_link = all_link[:limit_offer_load]
 
         for url in all_link:
 

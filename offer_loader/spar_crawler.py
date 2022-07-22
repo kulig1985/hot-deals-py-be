@@ -10,8 +10,9 @@ from offer_helper import OfferHelper
 
 class SparCrawler(OfferHelper):
 
-    def __init__(self, log):
+    def __init__(self, log, config):
         self.log = log
+        self.config = config
 
     def get_fake_headers(self, search):
 
@@ -66,6 +67,11 @@ class SparCrawler(OfferHelper):
 
         all_items = []
         counter = 1
+
+        limit_offer_load = int(self.config.get('MAIN', 'limit_offer_load'))
+        if limit_offer_load != 0:
+            all_spar_link = all_spar_link[:limit_offer_load]
+
         for url in all_spar_link: #TODO remove it!
 
             try:

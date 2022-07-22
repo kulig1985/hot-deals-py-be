@@ -8,8 +8,9 @@ import time
 
 class AuchanCrawler(OfferHelper):
 
-    def __init__(self, log):
+    def __init__(self, log, config):
         self.log = log
+        self.config = config
 
     def get_auth_header(self, token):
 
@@ -74,6 +75,11 @@ class AuchanCrawler(OfferHelper):
 
         all_items = []
         counter = 1
+
+        limit_offer_load = int(self.config.get('MAIN', 'limit_offer_load'))
+        if limit_offer_load != 0:
+            all_auchan_link = all_auchan_link[:limit_offer_load]
+
         for link in all_auchan_link:
 
             try:
