@@ -89,7 +89,7 @@ class HotDealsHungaryApi:
             config = ConfigParser()
 
             if platform.platform()[:platform.platform().index('-')].lower() == 'macos':
-                config_path = '/py_be_config_loader.cfg'
+                config_path = '/Users/kuligabor/Documents/HotDealsHungary/hot-deals-py-be/py_be_config_loader.cfg'
             else:
                 config_path = '/data/hot-deals-py-be/py_be_config_loader.cfg'
             config.read(config_path, encoding='utf-8')
