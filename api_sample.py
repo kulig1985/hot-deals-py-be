@@ -21,7 +21,8 @@ class HotDealsHungaryApi:
 
         self.user_name = self.config.get('DB', 'user_name')
         self.password = self.config.get('DB', 'password')
-        self.mongo_url = f'mongodb://{self.user_name}:{self.password}@95.138.193.102:27017/?authMechanism=DEFAULT'
+        self.host = self.config.get('DB', 'host')
+        self.mongo_url = f'mongodb://{self.user_name}:{self.password}{self.host}'
         self.offer_collection = self.connect_mongo(self.mongo_url, 'offer', 'offerCollection')
         self.offer_listener_collection = self.connect_mongo(self.mongo_url, 'offer', 'offerListener')
         self.shopping_list_collection = self.connect_mongo(self.mongo_url, 'offer', 'shoppingList')
