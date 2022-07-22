@@ -212,7 +212,7 @@ if __name__ == "__main__":
         #all_offer_df_list = offer_loader.run_offer_crawlers()
 
         #schedule.every(0.5).minutes.do(offer_loader.run_offer_crawlers)
-        schedule.every().day.at("16:43").do(offer_loader.run_offer_crawlers)
+        schedule.every().day.at("03:30").do(offer_loader.run_offer_crawlers)
 
         while True:
             schedule.run_pending()

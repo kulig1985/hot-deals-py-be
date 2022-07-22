@@ -94,11 +94,20 @@ class AuchanCrawler(OfferHelper):
                         item_dict['itemId'] = result['id']
                         item_dict['itemName'] = result['defaultVariant']['name']
                         item_dict['itemCleanName'] = unidecode.unidecode(item_dict['itemName']).lower()
-                        item_dict['imageUrl'] = result['defaultVariant']['media']['mainImage']
+
+                        try:
+                            item_dict['imageUrl'] = result['defaultVariant']['media']['mainImage']
+                        except Exception as e:
+                            item_dict['imageUrl'] = result['defaultVariant']['media']['images'][0]
+
                         item_dict['price'] = result['defaultVariant']['price']['gross']
                         item_dict['measure'] = result['defaultVariant']['packageInfo']['packageUnit']
                         item_dict['salesStart'] = np.nan
-                        item_dict['source'] = result['categoryName']
+                        try:
+                            item_dict['source'] = result['categoryName']
+                        except Exception as e:
+                            item_dict['source'] = 'Na.'
+
                         item_dict['runDate'] = datetime.now().strftime('%Y.%m.%d-%H:%M:%S')
                         item_dict['shopName'] = 'auchan'
                         if (result['defaultVariant']['price']['isDiscounted']):
