@@ -51,7 +51,6 @@ class SparCrawler(OfferHelper):
         offer_page = 'https://www.spar.hu/onlineshop/'
 
         r = requests.get(offer_page, headers=self.get_fake_headers(search=False))
-        self.log.debug(r.content)
         soup = bs(r.content, features='lxml')
         a_list = soup.body.findAll('a', {'class': ['flyout-categories__link']})
         all_spar_link = set()

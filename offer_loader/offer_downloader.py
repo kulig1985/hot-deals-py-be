@@ -20,6 +20,7 @@ class OfferLoader(Base):
 
     def __init__(self):
         super().__init__()
+        self.error_list = []
 
     def run_offer_crawlers(self):
 
@@ -44,6 +45,7 @@ class OfferLoader(Base):
 
         except Exception as e:
             self.log.error(f'Spar crawler error: {e}')
+            self.error_list.append(f'Spar crawler error: {e}')
 
         try:
             self.log.debug('-------Crawling Aldi START---------')
@@ -61,6 +63,7 @@ class OfferLoader(Base):
 
         except Exception as e:
             self.log.error(f'Aldi crawler error: {e}')
+            self.error_list.append(f'Aldi crawler error: {e}')
 
         try:
             self.log.debug('-------Crawling Lidl START---------')
@@ -78,6 +81,7 @@ class OfferLoader(Base):
 
         except Exception as e:
             self.log.error(f'Lidl crawler error: {e}')
+            self.error_list.append(f'Lidl crawler error: {e}')
 
         try:
             self.log.debug('-------Crawling Auchan START---------')
@@ -95,6 +99,7 @@ class OfferLoader(Base):
 
         except Exception as e:
             self.log.error(f'Auchan crawler error: {e}')
+            self.error_list.append(f'Auchan crawler error: {e}')
 
 
         try:
@@ -112,6 +117,7 @@ class OfferLoader(Base):
 
         except Exception as e:
             self.log.error(f'Tesco crawler error {e}')
+            self.error_list.append(f'Tesco crawler error: {e}')
 
         if len(all_offer_df_list) > 0:
 
@@ -157,53 +163,53 @@ class OfferLoader(Base):
     def load_data_to_mongo(self, all_offer_df):
         self.log.debug(f'load_data_to_mongo invoked!')
 
-        user_name = self.config.get('DB', 'user_name')
-        password = self.config.get('DB', 'password')
-        host = self.config.get('DB', 'host')
-        mongo_url = f'mongodb://{user_name}:{password}{host}'
-        collection_name = self.config.get('DB', 'collection_name')
-        client = MongoClient(mongo_url)
-        db = client['offer']
-        offer_collection = db[collection_name]
+        try:
+            user_name = self.config.get('DB', 'user_name')
+            password = self.config.get('DB', 'password')
+            host = self.config.get('DB', 'host')
+            mongo_url = f'mongodb://{user_name}:{password}{host}'
+            collection_name = self.config.get('DB', 'collection_name')
+            client = MongoClient(mongo_url)
+            db = client['offer']
+            offer_collection = db[collection_name]
 
-        data_dict = all_offer_df.to_dict("records")
+            data_dict = all_offer_df.to_dict("records")
 
-        mongo_result = offer_collection.insert_many(data_dict)
+            mongo_result = offer_collection.insert_many(data_dict)
 
-        self.log.debug(f'inserted mongo len: {len(mongo_result.inserted_ids)}')
+            self.log.debug(f'inserted mongo len: {len(mongo_result.inserted_ids)}')
 
-    def send_mail(self, time_key, df_gb):
+        except Exception as e:
+            self.log.error(f'MONGO error: {e}')
+            self.error_list.append(f'MONGO error: {e}')
+
+
+    def send_mail(self, time_key=None, df_gb=None, error=False, error_message=None):
 
         self.log.info('send mail invoked!')
 
         msg = EmailMessage()
+        message_text = self.config.get('MAIL', 'message_text')
         my_address = self.config.get('MAIL', 'my_address')
         app_generated_password = self.config.get('MAIL', 'app_generated_password')
-
-        msg["Subject"] = 'Hot deals offer crawler - ' + time_key
         msg["From"] = my_address
         msg["To"] = self.config.get('MAIL', 'mail_to')
 
-        message_text = self.config.get('MAIL', 'message_text')
-
-        msg.set_content(f'{message_text} \n {tabulate(df_gb, headers="keys", tablefmt="psql")}')
-
-        '''
-        if len(file_to_attach_list) > 0:
-
-            for file_name in file_to_attach_list:
-                with open(file_name, "rb") as file:  # open image file
-                    file_data = file.read()
-                    msg.add_attachment(file_data, maintype="application", subtype="xlsx", filename=file_name)
-                    
-        '''
+        if error:
+            msg["Subject"] = 'Hot deals offer crawler - ' + time_key
+            msg.set_content(f'{message_text} \n {tabulate(df_gb, headers="keys", tablefmt="psql")}  '
+                            f'Error list: {self.error_list}')
+        else:
+            msg["Subject"] = 'Hot deals offer crawler - ERROR'
+            msg.set_content(f'{message_text} \n FATAL error occured  {error_message}'
+                            f'Error list: {self.error_list}')
 
         with smtplib.SMTP_SSL("smtp.gmail.com", 465) as smtp:
-            smtp.login(my_address, app_generated_password)  # login gmail account
+                smtp.login(my_address, app_generated_password)  # login gmail account
 
-            self.log.info("sending mail")
-            smtp.send_message(msg)  # send message
-            self.log.info("mail has sent")
+                self.log.info("sending mail")
+                smtp.send_message(msg)  # send message
+                self.log.info("mail has sent")
 
 if __name__ == "__main__":
     try:
@@ -212,7 +218,7 @@ if __name__ == "__main__":
         #all_offer_df_list = offer_loader.run_offer_crawlers()
 
         #schedule.every(0.5).minutes.do(offer_loader.run_offer_crawlers)
-        schedule.every().day.at("21:16").do(offer_loader.run_offer_crawlers)
+        schedule.every().day.at("09:23").do(offer_loader.run_offer_crawlers)
 
         while True:
             schedule.run_pending()
@@ -220,6 +226,7 @@ if __name__ == "__main__":
 
     except Exception as e:
         print('main exception :' + str(e))
+        offer_loader.send_mail(error=True, error_message=str(e))
         sys.exit(1)
 
 
