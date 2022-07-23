@@ -180,13 +180,13 @@ class HotDealsHungaryApi:
             return Response(e, 500, mimetype='application/json')
 
     def add_offer(self):
-        try:
-            data = request.get_json()
-            self.log.debug(data)
-            mongo_result = self.offer_collection.insert_one(data)
-            return Response(dumps({'id': str(mongo_result.inserted_id)}), 201, mimetype='application/json')
-        except Exception as e:
-            return Response(e, 500, mimetype='application/json')
+        #try:
+        data = request.get_json()
+        self.log.debug(data)
+        mongo_result = self.offer_collection.insert_one(data)
+        return Response(dumps({'id': str(mongo_result.inserted_id)}), 201, mimetype='application/json')
+        #except Exception as e:
+        #    return Response(e, 500, mimetype='application/json')
 
 
     def get_offer_listener_by_user(self, uid):
