@@ -186,7 +186,7 @@ class OfferLoader(Base):
 
     def send_mail(self, time_key=None, df_gb=None, error=False, error_message=None):
 
-        self.log.info('send mail invoked!')
+        self.log.debug('send mail invoked!')
 
         msg = EmailMessage()
         message_text = self.config.get('MAIL', 'message_text')
@@ -195,7 +195,7 @@ class OfferLoader(Base):
         msg["From"] = my_address
         msg["To"] = self.config.get('MAIL', 'mail_to')
 
-        if error:
+        if not error:
             msg["Subject"] = 'Hot deals offer crawler - ' + time_key
             msg.set_content(f'{message_text} \n {tabulate(df_gb, headers="keys", tablefmt="psql")}  '
                             f'Error list: {self.error_list}')
