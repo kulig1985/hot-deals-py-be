@@ -40,7 +40,7 @@ class HotDealsHungaryApi:
         def __get_offer(item_name):
             return self.get_offer(item_name)
 
-        @self.app.route('/add_offer/', methods=['POST'])
+        @self.app.route('/add_offer', methods=['POST'])
         def __add_offer():
             return self.add_offer()
 
