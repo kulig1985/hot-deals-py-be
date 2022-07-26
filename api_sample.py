@@ -44,6 +44,11 @@ class HotDealsHungaryApi:
         def __add_offer():
             return self.add_offer()
 
+        @self.app.route('/find_offer_by_id/<id>', methods=['GET'])
+        def __find_offer_by_id(id):
+            return self.find_offer_by_id(id)
+
+
         @self.app.route('/get_offer_listener_by_user/<uid>', methods=['GET'])
         def __get_offer_listener_by_user(uid):
             return self.get_offer_listener_by_user(uid)
@@ -180,14 +185,23 @@ class HotDealsHungaryApi:
             return Response(e, 500, mimetype='application/json')
 
     def add_offer(self):
-        #try:
-        data = request.get_json()
-        self.log.debug(data)
-        mongo_result = self.offer_collection.insert_one(data)
-        return Response(dumps({'id': str(mongo_result.inserted_id)}), 201, mimetype='application/json')
-        #except Exception as e:
-        #    return Response(e, 500, mimetype='application/json')
+        try:
+            data = request.get_json()
+            self.log.debug(data)
+            mongo_result = self.offer_collection.insert_one(data)
+            return Response(dumps({'id': str(mongo_result.inserted_id)}), 201, mimetype='application/json')
+        except Exception as e:
+            return Response(e, 500, mimetype='application/json')
 
+    def find_offer_by_id(self, id):
+
+        try:
+            return Response(dumps(self.offer_collection.find_one({"_id": ObjectId(id)})), 200,
+                            mimetype='application/json')
+
+        except Exception as e:
+            return Response(e, 500, mimetype='application/json')
+    
 
     def get_offer_listener_by_user(self, uid):
         try:
