@@ -201,7 +201,7 @@ class HotDealsHungaryApi:
 
         except Exception as e:
             return Response(e, 500, mimetype='application/json')
-    
+
 
     def get_offer_listener_by_user(self, uid):
         try:
@@ -214,8 +214,16 @@ class HotDealsHungaryApi:
     def get_shopping_list_by_user(self, uid):
         try:
             self.log.debug(f'get_shopping_list_by_user invoked with uisd: {uid}')
-            return Response(dumps(self.shopping_list_collection.find({'alloweUidList.uid': uid,
-                                                                       'alloweUidList.boolId': 1, 'boolId': 1})), 200,
+            return Response(dumps(self.shopping_list_collection.find({'alloweUidList.uid': uid ,
+                                                                      'alloweUidList.boolId': 1,
+                                                                      'boolId': 1,
+                                                                      'itemList.boolId': 1},
+                                                                     {'listName': 1,
+                                                                      'alloweUidList': 1,
+                                                                      'crDate': 1,
+                                                                      'modDate': 1,
+                                                                      'boolId': 1,
+                                                                      'itemList': {'$elemMatch': {'boolId': 1}}})), 200,
                             mimetype='application/json')
 
         except Exception as e:
