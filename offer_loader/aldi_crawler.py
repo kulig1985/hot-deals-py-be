@@ -195,10 +195,12 @@ class AldiCrawler(OfferHelper):
 
         df = df.loc[df['price'] != '']
 
-        df.loc[~df['price'].str.isnumeric(),
-               'price'] = df.loc[~df['price'].str.isnumeric(),
-                                 'price'].str[
-                          0:df.loc[~df['price'].str.isnumeric(), 'price'].str.find(',').values[0]].astype(int)
+        try:
+            df.loc[~df['price'].str.isnumeric(),
+                   'price'] = df.loc[~df['price'].str.isnumeric(),
+                                     'price'].str[0:df.loc[~df['price'].str.isnumeric(), 'price'].str.find(',').values[0]].astype(int)
+        except:
+            pass
 
         df = df.fillna('N.a')
         df = df.loc[df['price'] != '']

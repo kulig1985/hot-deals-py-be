@@ -29,23 +29,6 @@ class OfferLoader(Base):
 
         all_offer_df_list = []
 
-        try:
-            self.log.debug('-------Crawling Spar START---------')
-
-            spar_crawler = SparCrawler(log=self.log, config=self.config)
-            all_spar_link = spar_crawler.get_all_link_spar()
-            self.log.debug(f'all_spar_link len: {len(all_spar_link)}')
-
-            spar_offers_df = spar_crawler.get_all_offer_spar(all_spar_link)
-            self.log.debug(f'spar_offers_df len: {len(spar_offers_df)}')
-
-            all_offer_df_list.append(spar_offers_df)
-
-            self.log.debug('-------Crawling Spar END---------')
-
-        except Exception as e:
-            self.log.error(f'Spar crawler error: {e}')
-            self.error_list.append(f'Spar crawler error: {e}')
 
         try:
             self.log.debug('-------Crawling Aldi START---------')
@@ -64,6 +47,24 @@ class OfferLoader(Base):
         except Exception as e:
             self.log.error(f'Aldi crawler error: {e}')
             self.error_list.append(f'Aldi crawler error: {e}')
+
+        try:
+            self.log.debug('-------Crawling Spar START---------')
+
+            spar_crawler = SparCrawler(log=self.log, config=self.config)
+            all_spar_link = spar_crawler.get_all_link_spar()
+            self.log.debug(f'all_spar_link len: {len(all_spar_link)}')
+
+            spar_offers_df = spar_crawler.get_all_offer_spar(all_spar_link)
+            self.log.debug(f'spar_offers_df len: {len(spar_offers_df)}')
+
+            all_offer_df_list.append(spar_offers_df)
+
+            self.log.debug('-------Crawling Spar END---------')
+
+        except Exception as e:
+            self.log.error(f'Spar crawler error: {e}')
+            self.error_list.append(f'Spar crawler error: {e}')
 
         try:
             self.log.debug('-------Crawling Lidl START---------')
@@ -215,10 +216,10 @@ if __name__ == "__main__":
     try:
 
         offer_loader = OfferLoader()
-        #all_offer_df_list = offer_loader.run_offer_crawlers()
+            #all_offer_df_list = offer_loader.run_offer_crawlers()
 
-        #schedule.every(0.5).minutes.do(offer_loader.run_offer_crawlers)
-        schedule.every().day.at("09:23").do(offer_loader.run_offer_crawlers)
+            #schedule.every(0.5).minutes.do(offer_loader.run_offer_crawlers)
+        schedule.every().day.at("03:30").do(offer_loader.run_offer_crawlers)
 
         while True:
             schedule.run_pending()

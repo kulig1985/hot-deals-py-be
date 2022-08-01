@@ -214,18 +214,25 @@ class HotDealsHungaryApi:
     def get_shopping_list_by_user(self, uid):
         try:
             self.log.debug(f'get_shopping_list_by_user invoked with uisd: {uid}')
-            return Response(dumps(self.shopping_list_collection.find({'alloweUidList.uid': uid,
-                                                                       'alloweUidList.boolId': 1, 'boolId': 1})), 200,
-                            mimetype='application/json')
 
-            '''
-            return Response(dumps(self.offer_collection.find({'$and': [
-                                                {'itemCleanName': {'$regex' : r'\b' + item_name + r'\b'}},
-                                                {'timeKey': {'$eq': max_key}},
-                                                {'isSales': 1},
-                                                {'insertType': 'automate'}
-                                                ]})), 200, mimetype='application/json')
-            '''
+            pipeline = [{"$match": {
+                              "alloweUidList.uid": uid,
+                              "alloweUidList.boolId": 1,
+                              "boolId": 1
+                            }},
+                        {"$addFields": {
+                              "itemList": {
+                                "$filter": {
+                                  "input": "$itemList",
+                                  "as": "i",
+                                  "cond": {
+                                    "$eq": [
+                                      "$$i.boolId",
+                                      1
+                                    ]}}}}}]
+
+            return Response(dumps(self.shopping_list_collection.aggregate(pipeline)), 200,
+                                                                          mimetype='application/json')
 
         except Exception as e:
             return Response(e, 500, mimetype='application/json')
