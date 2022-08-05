@@ -216,8 +216,10 @@ class HotDealsHungaryApi:
             self.log.debug(f'get_shopping_list_by_user invoked with uisd: {uid}')
 
             pipeline = [{"$match": {
-                              "alloweUidList.uid": uid,
-                              "alloweUidList.boolId": 1,
+                         "$elemMatch": {
+                              "uid": uid,
+                              "boolId": 1
+                            },
                               "boolId": 1
                             }},
                         {"$addFields": {
