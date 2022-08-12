@@ -29,6 +29,12 @@ class OfferLoader(Base):
 
         all_offer_df_list = []
 
+        self.log.debug('remove images from folder..')
+
+        try:
+            self.remove_old_images()
+        except Exception as ex:
+            self.log.error(f'remove image file error {ex}')
 
         try:
             self.log.debug('-------Crawling Aldi START---------')
@@ -44,9 +50,9 @@ class OfferLoader(Base):
 
             self.log.debug('-------Crawling Aldi END---------')
 
-        except Exception as e:
-            self.log.error(f'Aldi crawler error: {e}')
-            self.error_list.append(f'Aldi crawler error: {e}')
+        except Exception as ex:
+            self.log.error(f'Aldi crawler error: {ex}')
+            self.error_list.append(f'Aldi crawler error: {ex}')
 
         try:
             self.log.debug('-------Crawling Spar START---------')
@@ -62,9 +68,9 @@ class OfferLoader(Base):
 
             self.log.debug('-------Crawling Spar END---------')
 
-        except Exception as e:
-            self.log.error(f'Spar crawler error: {e}')
-            self.error_list.append(f'Spar crawler error: {e}')
+        except Exception as ex:
+            self.log.error(f'Spar crawler error: {ex}')
+            self.error_list.append(f'Spar crawler error: {ex}')
 
         try:
             self.log.debug('-------Crawling Lidl START---------')
@@ -80,9 +86,9 @@ class OfferLoader(Base):
 
             self.log.debug('-------Crawling Lidl END---------')
 
-        except Exception as e:
-            self.log.error(f'Lidl crawler error: {e}')
-            self.error_list.append(f'Lidl crawler error: {e}')
+        except Exception as ex:
+            self.log.error(f'Lidl crawler error: {ex}')
+            self.error_list.append(f'Lidl crawler error: {ex}')
 
         try:
             self.log.debug('-------Crawling Auchan START---------')
@@ -98,9 +104,9 @@ class OfferLoader(Base):
             all_offer_df_list.append(auchan_offers_df)
             self.log.debug('-------Crawling Auchan END---------')
 
-        except Exception as e:
-            self.log.error(f'Auchan crawler error: {e}')
-            self.error_list.append(f'Auchan crawler error: {e}')
+        except Exception as ex:
+            self.log.error(f'Auchan crawler error: {ex}')
+            self.error_list.append(f'Auchan crawler error: {ex}')
 
 
         try:
@@ -116,9 +122,9 @@ class OfferLoader(Base):
 
             self.log.debug('-------Crawling Tesco END---------')
 
-        except Exception as e:
-            self.log.error(f'Tesco crawler error {e}')
-            self.error_list.append(f'Tesco crawler error: {e}')
+        except Exception as ex:
+            self.log.error(f'Tesco crawler error {ex}')
+            self.error_list.append(f'Tesco crawler error: {ex}')
 
         if len(all_offer_df_list) > 0:
 

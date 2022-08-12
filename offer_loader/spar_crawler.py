@@ -85,7 +85,8 @@ class SparCrawler(OfferHelper):
                     item_dict['itemId'] = hit['masterValues']['product-number']
                     item_dict['itemName'] = hit['masterValues']['title']
                     item_dict['itemCleanName'] = unidecode.unidecode(item_dict['itemName']).lower()
-                    item_dict['imageUrl'] = hit['masterValues']['image-url']
+                    #item_dict['imageUrl'] = hit['masterValues']['image-url']
+                    item_dict['imageUrl'] = self.image_download(hit['masterValues']['image-url'])
                     item_dict['price'] = hit['masterValues']['price']
                     item_dict['measure'] = hit['masterValues']['sales-unit']
                     item_dict['salesStart'] = np.nan

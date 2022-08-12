@@ -113,7 +113,8 @@ class TescoCrawler(OfferHelper):
 
                             img = card.find('img', {'class': 'product-image'})
                             img_url = img['srcset']
-                            item_dict['imageUrl'] = img_url[:img_url.find(' ')]
+                            #item_dict['imageUrl'] = img_url[:img_url.find(' ')]
+                            item_dict['imageUrl'] = self.image_download(img_url[:img_url.find(' ')])
 
                             price = card.find('p', {'class': 'beans-price__text'})
                             item_dict['price'] = price.text.replace(' Ft', '').replace(' ','').strip()

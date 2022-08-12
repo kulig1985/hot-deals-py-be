@@ -104,7 +104,8 @@ class AldiCrawler(OfferHelper):
                                 img_url = img['data-src']
                                 break
 
-                            item_dict['imageUrl'] = img_url
+                            #item_dict['imageUrl'] = img_url
+                            item_dict['imageUrl'] = self.image_download(img_url)
 
                             item_dict['price'] = article.find('span', {'class': 'price'}).get_text().strip().replace(' Ft',
                                                                                                                      '').replace(
@@ -164,7 +165,8 @@ class AldiCrawler(OfferHelper):
                             item_dict['itemId'] = item_id
                             item_dict['itemName'] = h3.contents[0]
                             item_dict['itemCleanName'] = unidecode.unidecode(item_dict['itemName']).lower()
-                            item_dict['imageUrl'] = img_url
+                            #item_dict['imageUrl'] = img_url
+                            item_dict['imageUrl'] = self.image_download(img_url)
 
                             price = h2.find('b')
 

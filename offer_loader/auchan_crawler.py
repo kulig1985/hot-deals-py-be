@@ -96,9 +96,11 @@ class AuchanCrawler(OfferHelper):
                         item_dict['itemCleanName'] = unidecode.unidecode(item_dict['itemName']).lower()
 
                         try:
-                            item_dict['imageUrl'] = result['defaultVariant']['media']['mainImage']
+                            #item_dict['imageUrl'] = result['defaultVariant']['media']['mainImage']
+                            item_dict['imageUrl'] = self.image_download(result['defaultVariant']['media']['mainImage'])
                         except Exception as e:
-                            item_dict['imageUrl'] = result['defaultVariant']['media']['images'][0]
+                            #item_dict['imageUrl'] = result['defaultVariant']['media']['images'][0]
+                            item_dict['imageUrl'] = self.image_download(result['defaultVariant']['media']['images'][0])
 
                         item_dict['price'] = result['defaultVariant']['price']['gross']
                         item_dict['measure'] = result['defaultVariant']['packageInfo']['packageUnit']
