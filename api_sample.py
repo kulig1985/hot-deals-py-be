@@ -81,6 +81,10 @@ class HotDealsHungaryApi:
         def __modify_offer_listener():
             return self.modify_offer_listener()
 
+        @self.app.route('/image_download/<image_name>', methods=['GET'])
+        def __image_download():
+            return self.image_download(image_name)
+
     def run(self, host, port):
         self.app.run(host=host, port=port)
 
@@ -165,6 +169,9 @@ class HotDealsHungaryApi:
 
     def index(self):
         return 'HotDealsHungaryApi'
+
+    def image_download(self,image_name):
+        pass
 
     def get_offer(self, item_name):
 

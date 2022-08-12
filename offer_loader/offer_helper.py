@@ -13,7 +13,7 @@ class OfferHelper():
             val = string.find(char, val + 1)
         return val
 
-    def image_download(self, img_url):
+    def image_download(self, img_url, spar=False):
 
         try:
             uuid_image = uuid.uuid1()
@@ -26,6 +26,15 @@ class OfferHelper():
                 image_name = str(uuid_image) + '.png'
 
             img_path = '/data/img/' + image_name
+
+            if spar:
+
+                opener = urllib.request.build_opener()
+                opener.addheaders = [('Host', 'cdn1.interspar.at'), (
+                'User-Agent', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:103.0) Gecko/20100101 Firefox/103.0')]
+
+                urllib.request.install_opener(opener)
+
             urllib.request.urlretrieve(img_url, img_path)
 
             return image_name
