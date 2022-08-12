@@ -3,6 +3,7 @@ import platform
 import sys
 from abc import ABC
 from configparser import ConfigParser
+import os
 
 class Base(ABC):
 
@@ -58,4 +59,12 @@ class Base(ABC):
         except Exception as e:
             self.log.error("Config file load error: {}".format(str(e)))
             sys.exit(1)
+
+    def remove_old_images(self):
+
+        dir = '/data/img/'
+        for f in os.listdir(dir):
+            os.remove(os.path.join(dir, f))
+
+        self.log.debug('all files removed from /data/img/')
 

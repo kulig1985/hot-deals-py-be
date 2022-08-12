@@ -32,11 +32,3 @@ class OfferHelper():
         except Exception as e:
             self.log.error(f'image download error: {e}')
             return 'img_error.jpg'
-
-    def remove_old_images(self):
-
-        dir = '/data/img/'
-        for f in os.listdir(dir):
-            os.remove(os.path.join(dir, f))
-
-        self.log.debug('all files removed from /data/img/')
