@@ -10,6 +10,7 @@ import unidecode
 from bson.json_util import dumps
 import re
 from bson.objectid import ObjectId
+from flask import send_file
 
 class HotDealsHungaryApi:
 
@@ -82,7 +83,7 @@ class HotDealsHungaryApi:
             return self.modify_offer_listener()
 
         @self.app.route('/image_download/<image_name>', methods=['GET'])
-        def __image_download():
+        def __image_download(image_name):
             return self.image_download(image_name)
 
     def run(self, host, port):
@@ -170,8 +171,9 @@ class HotDealsHungaryApi:
     def index(self):
         return 'HotDealsHungaryApi'
 
-    def image_download(self,image_name):
-        pass
+    def image_download(self, image_name):
+        path = '/data/img/'
+        return send_file(path + image_name, mimetype='image/jpeg')
 
     def get_offer(self, item_name):
 
