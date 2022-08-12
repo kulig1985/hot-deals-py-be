@@ -3,10 +3,6 @@ import platform
 import sys
 from abc import ABC
 from configparser import ConfigParser
-import uuid
-import urllib.request
-import requests
-import os
 
 class Base(ABC):
 
@@ -63,30 +59,3 @@ class Base(ABC):
             self.log.error("Config file load error: {}".format(str(e)))
             sys.exit(1)
 
-    def image_download(self, img_url):
-
-        try:
-            uuid_image = uuid.uuid1()
-            res = requests.get(img_url)
-
-            if res.headers['Content-Type'][res.headers['Content-Type'].find('/') + 1:] == 'jpeg':
-                image_name = str(uuid_image) + '.jpg'
-
-            if res.headers['Content-Type'][res.headers['Content-Type'].find('/') + 1:] == 'plain':
-                image_name = str(uuid_image) + '.png'
-
-            img_path = '/data/img/' + image_name
-            urllib.request.urlretrieve(img_url, img_path)
-
-            return image_name
-        except Exception as e:
-            self.log.error(f'image download error: {e}')
-            return 'img_error.jpg'
-
-    def remove_old_images(self):
-
-        dir = '/data/img/'
-        for f in os.listdir(dir):
-            os.remove(os.path.join(dir, f))
-
-        self.log.debug('all files removed from /data/img/')
