@@ -101,7 +101,7 @@ class LidlCrawler(OfferHelper):
                             break
 
                         #item_dict['imageUrl'] = img_url
-                        item_dict['imageUrl'] = self.image_download(img_url)
+                        item_dict['imageUrl'] = self.image_download(img_url=img_url, shop='lidl')
 
                         item_dict['price'] = article['data-price']
 

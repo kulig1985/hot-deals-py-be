@@ -97,10 +97,10 @@ class AuchanCrawler(OfferHelper):
 
                         try:
                             #item_dict['imageUrl'] = result['defaultVariant']['media']['mainImage']
-                            item_dict['imageUrl'] = self.image_download(result['defaultVariant']['media']['mainImage'])
+                            item_dict['imageUrl'] = self.image_download(img_url=result['defaultVariant']['media']['mainImage'], shop='auchan')
                         except Exception as e:
                             #item_dict['imageUrl'] = result['defaultVariant']['media']['images'][0]
-                            item_dict['imageUrl'] = self.image_download(result['defaultVariant']['media']['images'][0])
+                            item_dict['imageUrl'] = self.image_download(img_url=result['defaultVariant']['media']['images'][0], shop='auchan')
 
                         item_dict['price'] = result['defaultVariant']['price']['gross']
                         item_dict['measure'] = result['defaultVariant']['packageInfo']['packageUnit']
