@@ -38,6 +38,24 @@ class OfferLoader(Base):
             self.log.error(f'remove image file error {ex}')
 
         try:
+            self.log.debug('-------Crawling Auchan START---------')
+
+            auchan_crawler = AuchanCrawler(log=self.log, config=self.config)
+            token = auchan_crawler.get_auchan_token()
+            all_auchan_link = auchan_crawler.get_all_auchan_link(token=token)
+            self.log.debug(f'all_auchan_link len: {len(all_auchan_link)}')
+
+            auchan_offers_df = auchan_crawler.get_all_offer_auchan(all_auchan_link=all_auchan_link, token=token)
+            self.log.debug(f'auchan_offers_df len: {len(auchan_offers_df)}')
+
+            all_offer_df_list.append(auchan_offers_df)
+            self.log.debug('-------Crawling Auchan END---------')
+
+        except Exception as ex:
+            self.log.error(f'Auchan crawler error: {ex}')
+            self.error_list.append(f'Auchan crawler error: {ex}')
+
+        try:
             self.log.debug('-------Crawling Aldi START---------')
             aldi_crawler = AldiCrawler(log=self.log, config=self.config)
 
@@ -90,24 +108,6 @@ class OfferLoader(Base):
         except Exception as ex:
             self.log.error(f'Lidl crawler error: {ex}')
             self.error_list.append(f'Lidl crawler error: {ex}')
-
-        try:
-            self.log.debug('-------Crawling Auchan START---------')
-
-            auchan_crawler = AuchanCrawler(log=self.log, config=self.config)
-            token = auchan_crawler.get_auchan_token()
-            all_auchan_link = auchan_crawler.get_all_auchan_link(token=token)
-            self.log.debug(f'all_auchan_link len: {len(all_auchan_link)}')
-
-            auchan_offers_df = auchan_crawler.get_all_offer_auchan(all_auchan_link=all_auchan_link, token=token)
-            self.log.debug(f'auchan_offers_df len: {len(auchan_offers_df)}')
-
-            all_offer_df_list.append(auchan_offers_df)
-            self.log.debug('-------Crawling Auchan END---------')
-
-        except Exception as ex:
-            self.log.error(f'Auchan crawler error: {ex}')
-            self.error_list.append(f'Auchan crawler error: {ex}')
 
 
         try:

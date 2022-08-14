@@ -15,3 +15,4 @@ hot_deals_api.log
 hot_deals_api.log
 hot_deals_api.log
 offer_loader/__pycache__
+*.pyc

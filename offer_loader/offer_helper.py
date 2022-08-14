@@ -2,6 +2,7 @@ import uuid
 import urllib.request
 import requests
 import os
+import platform
 
 
 class OfferHelper():
@@ -109,13 +110,19 @@ class OfferHelper():
             uuid_image = uuid.uuid1()
             res = requests.get(img_url, headers=headers)
 
+            #print(res.headers)
+
             if res.headers['Content-Type'][res.headers['Content-Type'].find('/') + 1:] == 'jpeg':
                 image_name = shop + '_' + str(uuid_image) + '.jpg'
 
-            if res.headers['Content-Type'][res.headers['Content-Type'].find('/') + 1:] == 'plain':
+            if (res.headers['Content-Type'][res.headers['Content-Type'].find('/') + 1:] == 'plain') | \
+                    (res.headers['Content-Type'][res.headers['Content-Type'].find('/') + 1:] == 'png'):
                 image_name = shop + '_' + str(uuid_image) + '.png'
 
-            img_path = '/data/img/' + image_name
+            if platform.platform()[:platform.platform().index('-')].lower() == 'macos':
+                img_path = '/Users/kuligabor/Documents/HotDealsHungary/img/' + image_name
+            else:
+                img_path = '/data/img/' + image_name
 
             urllib.request.install_opener(opener)
 
