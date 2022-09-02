@@ -154,7 +154,7 @@ class OfferLoader(Base):
             self.log.debug(f'time_key to current load {time_key}')
             all_offer_df['timeKey'] = time_key
 
-            all_offer_df['imageColorIndex'] = random.randint(0,4)
+            #all_offer_df['rand'] = all_offer_df.apply(lambda x: random.randint(0, 4), 1)
 
             self.load_data_to_mongo(all_offer_df)
 

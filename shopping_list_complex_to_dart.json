@@ -1,0 +1,78 @@
+[
+   {
+      "_id":{
+         "$oid":"6309d39d6ceb6fba73ec03ef"
+      },
+      "listName":"Gabor lista",
+      "alloweUidList":[
+         {
+            "uid":"prQUKkIxljVqbHlCKah7T1Rh7l22",
+            "role":"creator",
+            "boolId":1,
+            "crDate":"2022.06.10",
+            "modDate":"2022.07.10"
+         }
+      ],
+      "offerModelList":[
+         {
+            "offerListenerEntity":{
+               "_id":"6309dc91f048d51878211516",
+               "uid":"prQUKkIxljVqbHlCKah7T1Rh7l22",
+               "itemName":"tej",
+               "crDate":"2022-07-09 15:17",
+               "boolId":1,
+               "modDate":null,
+               "imageColorIndex":0,
+               "shoppingListId":"6309d39d6ceb6fba73ec03ef"
+            },
+            "offers":[
+               {
+                 "_id":{
+                    "$oid":"6309d39d6ceb6fba73ec03ef"
+                  },
+                  "itemId":2004020295988,
+                  "itemName":"Tesco ESL tej 500 ml",
+                  "itemCleanName":"tesco esl zsirszegeny kakaos tej 500 ml",
+                  "imageUrl":"tesco_1b07d558-1cb3-11ed-a5cc-0242ac110002.jpg",
+                  "price":259,
+                  "measure":"518 Ft/l",
+                  "salesStart":"N.a",
+                  "source":"tejtermekek-tojas",
+                  "runDate":"2022.08.15-17:58:29",
+                  "shopName":"tesco",
+                  "isSales":1,
+                  "insertType":"automate",
+                  "timeKey":"2022_08_15_18_51",
+                  "imageColorIndex":0,
+                  "isSelectedFlag":0,
+                  "selectedBy":"not_selected"
+               },
+               {
+                 "_id":{
+                    "$oid":"6309d39d6ceb6fba73ec03ef"
+                  },
+                  "itemId":149602,
+                  "itemName":"esdfsdf 130 g",
+                  "itemCleanName":"muller mix joghurt tej- es feher csokoladeval bevont kakao- es tejkremes ostya parnacskaval 130 g",
+                  "imageUrl":"auchan_cfc8349e-1c93-11ed-a5cc-0242ac110002.png",
+                  "price":299,
+                  "measure":"KG",
+                  "salesStart":"N.a",
+                  "source":"Gyerek desszertek",
+                  "runDate":"2022.08.15-14:14:29",
+                  "shopName":"auchan",
+                  "isSales":1,
+                  "insertType":"automate",
+                  "timeKey":"2022_08_15_18_51",
+                  "imageColorIndex":0,
+                  "isSelectedFlag":0,
+                  "selectedBy":"not_selected"
+               }
+            ]
+         }
+      ],
+      "crDate":"2022.07.08",
+      "modDate":"2022.07.08",
+      "boolId":1
+   }
+]

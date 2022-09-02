@@ -1,0 +1,79 @@
+
+   {
+      "_id":{
+         "$oid":"630913a552f2ababa6c7783d"
+      },
+      "listName":"Gábor lista",
+      "alloweUidList":[
+         {
+            "uid":"prQUKkIxljVqbHlCKah7T1Rh7l22",
+            "role":"creator",
+            "boolId":1,
+            "crDate":"2022.06.10",
+            "modDate":"2022.07.10"
+         }
+      ],
+      "offerModelList":[
+         {
+            "offerListenerEntity":{
+               "_id":{
+                  "$oid":"6303687d00c3aea4aa2aef42"
+               },
+               "uid":"prQUKkIxljVqbHlCKah7T1Rh7l22",
+               "itemName":"tej",
+               "crDate":"2022-08-22 13:29",
+               "boolId":1,
+               "modDate":null,
+               "imageColorIndex":1,
+               "shoppingListId":"630913a552f2ababa6c7783d"
+            },
+            "offers":[
+               {
+                  "_id":{
+                     "$oid":"62fa7983b7f32cc089864a3b"
+                  },
+                  "itemId":127382,
+                  "itemName":"Auchan Nívó Pasztőrözött dobozos tej 2,8% 1 l",
+                  "itemCleanName":"auchan nivo pasztorozott dobozos tej 2,8% 1 l",
+                  "imageUrl":"auchan_5c702196-1c93-11ed-a5cc-0242ac110002.png",
+                  "price":349,
+                  "measure":"LITER",
+                  "salesStart":"N.a",
+                  "source":"Friss tej",
+                  "runDate":"2022.08.15-14:11:15",
+                  "shopName":"auchan",
+                  "isSales":1,
+                  "insertType":"automate",
+                  "timeKey":"2022_08_15_18_51",
+                  "imageColorIndex":0,
+                  "isSelectedFlag":1,
+                  "selectedBy":"prQUKkIxljVqbHlCKah7T1Rh7l22"
+               },
+               {
+                  "_id":{
+                     "$oid":"62fa7983b7f32cc089864e20"
+                  },
+                  "itemId":"149602",
+                  "itemName":"Müller Mix joghurt tej- és fehér csokoládéval bevont kakaó- és tejkrémes ostya párnácskával 130 g",
+                  "itemCleanName":"muller mix joghurt tej- es feher csokoladeval bevont kakao- es tejkremes ostya parnacskaval 130 g",
+                  "imageUrl":"auchan_cfc8349e-1c93-11ed-a5cc-0242ac110002.png",
+                  "price":299,
+                  "measure":"KG",
+                  "salesStart":"N.a",
+                  "source":"Gyerek desszertek",
+                  "runDate":"2022.08.15-14:14:29",
+                  "shopName":"auchan",
+                  "isSales":1,
+                  "insertType":"automate",
+                  "timeKey":"2022_08_15_18_51",
+                  "imageColorIndex":0,
+                  "isSelectedFlag":0,
+                  "selectedBy":"not_selected"
+               }
+            ]
+         }
+      ],
+      "crDate":"2022.07.08",
+      "modDate":"2022.07.08",
+      "boolId":1
+   }
