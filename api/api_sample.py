@@ -34,6 +34,7 @@ class HotDealsHungaryApi:
                                'modDate': '$set',
                                'volume': '$set',
                                'itemCount': '$inc',
+                               'listName': '$set',
                                'alloweUidList': '$push'}
 
         @self.app.route('/', methods=['GET'])
