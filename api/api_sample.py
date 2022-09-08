@@ -12,7 +12,9 @@ import re
 from bson.objectid import ObjectId
 from flask import send_file
 import model.shopping_list_complex_model as slc
-#import model.offer_response as ofre
+
+
+# import model.offer_response as ofre
 
 class HotDealsHungaryApi:
 
@@ -53,14 +55,13 @@ class HotDealsHungaryApi:
         def __find_offer_by_id(id):
             return self.find_offer_by_id(id)
 
-
         @self.app.route('/get_offer_listener_by_user/<uid>', methods=['GET'])
         def __get_offer_listener_by_user(uid):
             return self.get_offer_listener_by_user(uid)
 
         @self.app.route('/get_shopping_list_by_user/<uid>/<shoppinglist_id>', methods=['GET'])
-        def __get_shopping_list_by_user(uid,shoppinglist_id):
-            return self.get_shopping_list_by_user(uid,shoppinglist_id)
+        def __get_shopping_list_by_user(uid, shoppinglist_id):
+            return self.get_shopping_list_by_user(uid, shoppinglist_id)
 
         @self.app.route('/create_offer_listener', methods=['POST'])
         def __create_offer_listener():
@@ -149,7 +150,6 @@ class HotDealsHungaryApi:
             print("logger error: " + str(e))
             sys.exit(1)
 
-
     def create_query_param(self, data, fill_value):
 
         self.log.debug('create_query_param invoked!')
@@ -160,8 +160,8 @@ class HotDealsHungaryApi:
             if not (key == 'id') | \
                    (key == 'offerCollectionId') | \
                    (key == 'offerListenerEntityId') | \
-                   (key == 'removeUser') |\
-                   (key == 'itemName') |\
+                   (key == 'removeUser') | \
+                   (key == 'itemName') | \
                    (key == 'crDate'):
                 self.log.debug(key)
                 if self.operation_dict[key] in query_param_dict.keys():
@@ -182,7 +182,7 @@ class HotDealsHungaryApi:
 
     def get_offer(self, item_name):
 
-        #try:
+        # try:
         item_name = unidecode.unidecode(item_name).lower()
         self.log.debug(f'get_offer invoked with item_name: {item_name}')
 
@@ -199,12 +199,12 @@ class HotDealsHungaryApi:
 
         '''
 
-        pipeline = [{'$match':  {'$and': [
-                                            {'itemCleanName': {'$regex': r'\b' + item_name + r'\b'}},
-                                            {'timeKey': {'$eq': max_key}},
-                                            {'isSales': 1},
-                                            {'insertType': 'automate'}
-                                            ]}}, {'$addFields': {"id": '$_id'}}, {'$project': {'_id': 0}}]
+        pipeline = [{'$match': {'$and': [
+            {'itemCleanName': {'$regex': r'\b' + item_name + r'\b'}},
+            {'timeKey': {'$eq': max_key}},
+            {'isSales': 1},
+            {'insertType': 'automate'}
+        ]}}, {'$addFields': {"id": '$_id'}}, {'$project': {'_id': 0}}]
         '''
         return Response(dumps(self.offer_collection.find({'$and': [
                                             {'itemCleanName': {'$regex' : r'\b' + item_name + r'\b'}},
@@ -229,7 +229,7 @@ class HotDealsHungaryApi:
 
         # except Exception as e:
         #    return Response(e, 500, mimetype='application/json')
-            # return None
+        # return None
 
     def add_offer(self):
         try:
@@ -249,11 +249,11 @@ class HotDealsHungaryApi:
         except Exception as e:
             return Response(e, 500, mimetype='application/json')
 
-
     def get_offer_listener_by_user(self, uid):
         try:
             self.log.debug(f'get_offer_listener_by_user invoked with uid: {uid}')
-            return Response(dumps(self.offer_listener_collection.find({'uid': uid, 'boolId': 1})), 200, mimetype='application/json')
+            return Response(dumps(self.offer_listener_collection.find({'uid': uid, 'boolId': 1})), 200,
+                            mimetype='application/json')
 
         except Exception as e:
             return Response(e, 500, mimetype='application/json')
@@ -294,43 +294,43 @@ class HotDealsHungaryApi:
             '''
 
             pipeline = [{"$match": {
-                            "alloweUidList": {
-                            "$elemMatch": {
-                            "uid": uid,
-                            "boolId": 1
-                            }},
-                            "boolId": 1,
-                            }},
-                            {"$addFields": {
-                                  "offerModelList": {
-                                    "$filter": {
-                                      "input": "$offerModelList",
-                                      "as": "i",
-                                      "cond": {
-                                        "$eq": [
-                                          "$$i.offerListenerEntity.boolId",
-                                          1
-                                        ]}}}},
-                            },
-                            {
-                            "$set": {
-                                    "offerModelList": {
-                                    "$map": {
-                                    "input": "$offerModelList",
-                                    "as": "offerModel",
-                                    "in": {
+                "alloweUidList": {
+                    "$elemMatch": {
+                        "uid": uid,
+                        "boolId": 1
+                    }},
+                "boolId": 1,
+            }},
+                {"$addFields": {
+                    "offerModelList": {
+                        "$filter": {
+                            "input": "$offerModelList",
+                            "as": "i",
+                            "cond": {
+                                "$eq": [
+                                    "$$i.offerListenerEntity.boolId",
+                                    1
+                                ]}}}},
+                },
+                {
+                    "$set": {
+                        "offerModelList": {
+                            "$map": {
+                                "input": "$offerModelList",
+                                "as": "offerModel",
+                                "in": {
                                     "$mergeObjects": [
                                         "$$offerModel",
-                                            {
-                                                "offers": {
+                                        {
+                                            "offers": {
                                                 "$filter": {
-                                                "input": "$$offerModel.offers",
-                                                "as": "x",
-                                                "cond": {
-                                                "$eq": [
-                                                "$$x.isSelectedFlag",
-                                                1]
-                            }}}}]}}}}}]
+                                                    "input": "$$offerModel.offers",
+                                                    "as": "x",
+                                                    "cond": {
+                                                        "$eq": [
+                                                            "$$x.isSelectedFlag",
+                                                            1]
+                                                    }}}}]}}}}}]
             # "_id": ObjectId(shoppinglist_id)
 
             if (shoppinglist_id != 'none'):
@@ -339,13 +339,13 @@ class HotDealsHungaryApi:
             self.log.debug(pipeline)
 
             return Response(dumps(self.shopping_list_collection.aggregate(pipeline)), 200,
-                                                                          mimetype='application/json')
+                            mimetype='application/json')
 
         except Exception as e:
             return Response(e, 500, mimetype='application/json')
 
     def create_offer_listener(self):
-        #try:
+        # try:
         data = request.get_json()
         self.log.debug(data)
         # mongo_result = self.offer_listener_collection.insert_one(data)
@@ -408,16 +408,17 @@ class HotDealsHungaryApi:
 
         offer_model_instance_to_insert = slc.offer_model_list_to_dict(offer_model_instance)
 
-        offer_model_instance_to_insert['offerListenerEntity']['_id'] = offer_model_instance_to_insert['offerListenerEntity']['_id']['$oid']
+        offer_model_instance_to_insert['offerListenerEntity']['_id'] = \
+        offer_model_instance_to_insert['offerListenerEntity']['_id']['$oid']
 
         # for offer in offer_model_instance_to_insert['offers']:
         #    offer['_id'] = offer['_id']['$oid']
 
         self.log.debug(f'offer_model_instance: {offer_model_instance_to_insert}')
 
-
         mongo_result = self.shopping_list_collection.update_one({"_id": ObjectId(data['shoppingListId'])},
-                                                                {'$push': {'offerModelList': offer_model_instance_to_insert}},
+                                                                {'$push': {
+                                                                    'offerModelList': offer_model_instance_to_insert}},
                                                                 upsert=True)
 
         return Response(dumps({'id': str(offer_listener_id)}), 201, mimetype='application/json')
@@ -426,20 +427,17 @@ class HotDealsHungaryApi:
         # except Exception as e:
         #    return Response(e, 500, mimetype='application/json')
 
-
-
     def create_shopping_list(self):
-        #try:
+        # try:
         data = request.get_json()
         self.log.debug(data)
         mongo_result = self.shopping_list_collection.insert_one(data)
-        return Response(dumps({'id' : str(mongo_result.inserted_id)}), 201, mimetype='application/json')
-        #except Exception as e:
+        return Response(dumps({'id': str(mongo_result.inserted_id)}), 201, mimetype='application/json')
+        # except Exception as e:
         #    return Response(e,500, mimetype='application/json')
 
-
     def add_item_to_shopping_list(self):
-        #try:
+        # try:
         data = request.get_json()
         self.log.debug(data)
 
@@ -448,12 +446,14 @@ class HotDealsHungaryApi:
                                                  {'$set': {'offerModelList.$.offers.$[].isSelectedFlag': 0}})
 
         mongo_result = self.shopping_list_collection.update_one({"_id": ObjectId(data['id']),
-                                                                 "offerModelList.offerListenerEntity._id": data['offerListenerId']},
-                                                                {'$push': {'offerModelList.$.offers': data['offer']}}, upsert=True)
+                                                                 "offerModelList.offerListenerEntity._id": data[
+                                                                     'offerListenerId']},
+                                                                {'$push': {'offerModelList.$.offers': data['offer']}},
+                                                                upsert=True)
 
         return Response(dumps({'id': str(mongo_result.matched_count)}), 201, mimetype='application/json')
 
-        #except Exception as e:
+        # except Exception as e:
         #    return Response(e, 500, mimetype='application/json')
 
     def modify_shopping_list_item(self):
@@ -474,18 +474,19 @@ class HotDealsHungaryApi:
         :return:
         '''
 
-        #try:
+        # try:
         data = request.get_json()
         self.log.debug(data)
 
-        #fill_value = 'itemList.$.'
+        # fill_value = 'itemList.$.'
         fill_value = 'offerModelList.$.offerListenerEntity.'
         query_param_dict = self.create_query_param(data, fill_value)
 
         self.log.debug(f'query_param_dict: {query_param_dict}')
 
         mongo_result = self.shopping_list_collection.update_one({"_id": ObjectId(data['id']),
-                                                                 'offerModelList.offerListenerEntity._id': data['offerListenerEntityId']},
+                                                                 'offerModelList.offerListenerEntity._id': data[
+                                                                     'offerListenerEntityId']},
                                                                 query_param_dict)
 
         return Response(dumps({'matchedCount': str(mongo_result.matched_count)}), 201, mimetype='application/json')
@@ -494,30 +495,48 @@ class HotDealsHungaryApi:
         #    return Response(e, 500, mimetype='application/json')
 
     def modify_shopping_list(self):
-        try:
-            data = request.get_json()
-            self.log.debug(data)
 
-            fill_value = ''
-            query_param_dict = self.create_query_param(data, fill_value)
-            find_param = {'_id': ObjectId(data['id'])}
+        # try:
+        data = request.get_json()
+        self.log.debug("modify_shopping_list invoked!")
+        self.log.debug(data)
 
-            if data['removeUser'] == 'Y':
-                find_param.update({'alloweUidList.uid': data['alloweUidList']['uid']})
-                query_param_dict = {'$set': {'alloweUidList.$.boolId': data['alloweUidList']['boolId'],
-                                    'alloweUidList.$.modDate': data['alloweUidList']['modDate']}}
-                self.log.debug(query_param_dict)
-                self.log.debug(find_param)
+        fill_value = ''
+        query_param_dict = self.create_query_param(data, fill_value)
+        find_param = {'_id': ObjectId(data['id'])}
+
+        if data['removeUser'] == 'Y':
+            # find_param.update({'alloweUidList.uid': data['alloweUidList']['uid']})
+            query_param_dict = {
+                "$set": {
+                    "alloweUidList.$[x].boolId": 0,
+                    "alloweUidList.$[x].modDate": data['alloweUidList']['modDate'],
+                }}
+
+            array_filter = [
+                    {
+                        "x.uid": data['alloweUidList']['uid']
+                    }
+                ]
+
+            self.log.debug(f'query_param_dict: {query_param_dict}')
+            self.log.debug(f'find_param: {find_param}')
 
             mongo_result = self.shopping_list_collection.update_one(
-                find_param,
-                query_param_dict)
+                filter=find_param,
+                update=query_param_dict,
+            array_filters=array_filter)
 
             return Response(dumps({'matchedCount': mongo_result.matched_count}), 201, mimetype='application/json')
 
-        except Exception as e:
-            return Response(e, 500, mimetype='application/json')
+        mongo_result = self.shopping_list_collection.update_one(
+            filter=find_param,
+            update=query_param_dict)
 
+        return Response(dumps({'matchedCount': mongo_result.matched_count}), 201, mimetype='application/json')
+
+        # except Exception as e:
+        #    return Response(e, 500, mimetype='application/json')
 
     def modify_offer_listener(self):
 
@@ -535,6 +554,7 @@ class HotDealsHungaryApi:
 
         except Exception as e:
             return Response(e, 500, mimetype='application/json')
+
 
 def main():
     server = HotDealsHungaryApi(__name__)
