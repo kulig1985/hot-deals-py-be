@@ -204,7 +204,7 @@ class HotDealsHungaryApi:
             {'timeKey': {'$eq': max_key}},
             {'isSales': 1},
             {'insertType': 'automate'}
-        ]}}, {'$addFields': {"id": '$_id'}}, {'$project': {'_id': 0}}]
+        ]}}, {'$addFields': {"id": '$_id'}}, {'$project': {'_id': 0}}, {"$sort": {"price": 1}}]
         '''
         return Response(dumps(self.offer_collection.find({'$and': [
                                             {'itemCleanName': {'$regex' : r'\b' + item_name + r'\b'}},
@@ -504,36 +504,56 @@ class HotDealsHungaryApi:
         fill_value = ''
         query_param_dict = self.create_query_param(data, fill_value)
         find_param = {'_id': ObjectId(data['id'])}
+        array_filter = [
+            {
+                "x.uid": data['alloweUidList']['uid']
+            }
+        ]
+        query_param_dict_update = {
+            "$set": {
+                "alloweUidList.$[x].boolId": 0,
+                "alloweUidList.$[x].modDate": data['alloweUidList']['modDate'],
+            }}
 
         if data['removeUser'] == 'Y':
             # find_param.update({'alloweUidList.uid': data['alloweUidList']['uid']})
-            query_param_dict = {
-                "$set": {
-                    "alloweUidList.$[x].boolId": 0,
-                    "alloweUidList.$[x].modDate": data['alloweUidList']['modDate'],
-                }}
-
-            array_filter = [
-                    {
-                        "x.uid": data['alloweUidList']['uid']
-                    }
-                ]
 
             self.log.debug(f'query_param_dict: {query_param_dict}')
             self.log.debug(f'find_param: {find_param}')
 
             mongo_result = self.shopping_list_collection.update_one(
                 filter=find_param,
-                update=query_param_dict,
+                update=query_param_dict_update,
             array_filters=array_filter)
 
             return Response(dumps({'matchedCount': mongo_result.matched_count}), 201, mimetype='application/json')
 
-        mongo_result = self.shopping_list_collection.update_one(
-            filter=find_param,
-            update=query_param_dict)
 
-        return Response(dumps({'matchedCount': mongo_result.matched_count}), 201, mimetype='application/json')
+        # Check if user already on list!
+
+        find_param.update({'alloweUidList.uid': data['alloweUidList']['uid']})
+        mongo_result_user_check = self.shopping_list_collection.count_documents(find_param)
+        self.log.debug(f'mongo_result_user_check: {mongo_result_user_check}')
+
+        if (mongo_result_user_check == 0):
+            del find_param['alloweUidList.uid']
+            mongo_result = self.shopping_list_collection.update_one(
+                filter=find_param,
+                update=query_param_dict)
+
+            return Response(dumps({'matchedCount': mongo_result.matched_count}), 201, mimetype='application/json')
+        else:
+            query_param_dict_update['$set']['alloweUidList.$[x].boolId'] = 1
+            mongo_result = self.shopping_list_collection.update_one(
+                filter=find_param,
+                update=query_param_dict_update,
+            array_filters=array_filter)
+            return Response(dumps({'matchedCount': mongo_result.matched_count}), 201, mimetype='application/json')
+
+
+
+
+
 
         # except Exception as e:
         #    return Response(e, 500, mimetype='application/json')
