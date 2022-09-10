@@ -514,10 +514,16 @@ class HotDealsHungaryApi:
 
         if (data['operationName'] == 'ADD_USER'):
 
+            self.log.debug("Add user start!")
             base_find_param.update({'alloweUidList.uid': data['alloweUidList']['uid']})
             count_document = self.shopping_list_collection.count_documents(base_find_param)
 
             if (count_document == 0):
+                self.log.debug("No document found! Create new allowed user")
+                self.log.debug(f"base_find_param: {base_find_param}")
+                self.log.debug(f"base_find_param: {base_query_param}")
+
+                del base_find_param['alloweUidList.uid']
 
                 mongo_result = self.shopping_list_collection.update_one(
                     filter=base_find_param,
