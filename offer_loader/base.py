@@ -4,6 +4,7 @@ import sys
 from abc import ABC
 from configparser import ConfigParser
 import os
+import time
 
 class Base(ABC):
 
@@ -63,8 +64,11 @@ class Base(ABC):
     def remove_old_images(self):
 
         dir = '/data/img/'
-        for f in os.listdir(dir):
-            os.remove(os.path.join(dir, f))
+        now = time.time()
 
-        self.log.debug('all files removed from /data/img/')
+        for f in os.listdir(dir):
+            if os.stat(os.path.join(dir, f)).st_mtime < now - 7 * 86400:
+                os.remove(os.path.join(dir, f))
+
+        self.log.debug('all 7 days old files removed from /data/img/')
 
