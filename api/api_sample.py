@@ -31,6 +31,8 @@ class HotDealsHungaryApi:
         self.offer_collection = self.connect_mongo(self.mongo_url, 'offer', 'offerCollection')
         self.offer_listener_collection = self.connect_mongo(self.mongo_url, 'offer', 'offerListener')
         self.shopping_list_collection = self.connect_mongo(self.mongo_url, 'offer', 'shoppingList')
+        self.uid_token_collection = self.connect_mongo(self.mongo_url, 'offer', 'uidTokenCollection')
+
         self.operation_dict = {'boolId': '$set',
                                'checkFlag': '$set',
                                'modDate': '$set',
@@ -90,6 +92,10 @@ class HotDealsHungaryApi:
         @self.app.route('/image_download/<image_name>', methods=['GET'])
         def __image_download(image_name):
             return self.image_download(image_name)
+
+        @self.app.route('/create_platform_and_token_for_uid', methods=['POST'])
+        def __create_platform_and_token_for_uid():
+            return self.create_platform_and_token_for_uid()
 
     def run(self, host, port):
         self.app.run(host=host, port=port)
@@ -581,6 +587,30 @@ class HotDealsHungaryApi:
                 {'_id': ObjectId(data['id'])}, query_param_dict)
 
             return Response(dumps({'matchedCount': str(mongo_result.matched_count)}), 201, mimetype='application/json')
+
+        except Exception as e:
+            return Response(e, 500, mimetype='application/json')
+
+
+    def create_platform_and_token_for_uid(self):
+
+        try:
+            data = request.get_json()
+            self.log.debug(data)
+
+            existing_document = json.loads(dumps(self.uid_token_collection.find({'uid': data['uid'],
+                                                                                 'boolId': 1,
+                                                                                 'token': data['token']})))
+
+            if len(existing_document) == 0:
+                self.log.debug(f"NOT found valid document to uid: {data['uid']} with token: {data['token']}")
+
+                mongo_result = self.uid_token_collection.insert_one(data)
+                return Response(dumps({'id': str(mongo_result.inserted_id)}), 201, mimetype='application/json')
+
+            else:
+                self.log.debug(f"found valid document to uid: {data['uid']} with token: {data['token']}")
+                return Response(dumps({'id': str(existing_document[0]['_id']['$oid'])}), 200, mimetype='application/json')
 
         except Exception as e:
             return Response(e, 500, mimetype='application/json')
