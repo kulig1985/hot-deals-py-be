@@ -67,7 +67,7 @@ class Base(ABC):
         now = time.time()
 
         for f in os.listdir(dir):
-            if os.stat(os.path.join(dir, f)).st_mtime < now - 7 * 86400:
+            if os.stat(os.path.join(dir, f)).st_mtime < now - 3 * 86400:
                 os.remove(os.path.join(dir, f))
 
         self.log.debug('all 7 days old files removed from /data/img/')
